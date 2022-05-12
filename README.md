@@ -1,4 +1,4 @@
-# Hola! soy Jorge Paez :smiley: :computer:, DESARROLLADOR WEB en proceso de actualización al Stack MERN (MongoDB - Express.js -  React.js - Node.js )
+# Hola! soy Jorge Paez :smiley: :computer:, FRONTEND DEVELOPER estudiando Stack MERN (MongoDB - Express.js -  React.js - Node.js )
 ![enter image description here](https://c.tenor.com/UttC4AITYR4AAAAd/full-stack-developer.gif)
 # :large_blue_circle: Mis redes:
 [Whatsapp](https://api.whatsapp.com/send?phone=5492932540493&text=Me%20interesa%20contactarte%20para...) | [Twitter](https://twitter.com/Giorgio_Code) | [LinkedIn](https://www.linkedin.com/in/jorge-angel-paez/)
