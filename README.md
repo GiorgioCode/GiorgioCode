@@ -1,6 +1,6 @@
 # Hola! soy Jorge Paez :smiley: :computer:, FRONTEND DEVELOPER estudiando Stack MERN (MongoDB - Express.js -  React.js - Node.js )
 ![enter image description here](https://c.tenor.com/UttC4AITYR4AAAAd/full-stack-developer.gif)
-![GiorgioCode's GitHub stats](https://github-readme-stats.vercel.app/api?username=GiorgioCode&count_private=true&show_icons=true&theme=synthwave)
+
 # :large_blue_circle: Mis redes:
 [Whatsapp](https://api.whatsapp.com/send?phone=5492932540493&text=Me%20interesa%20contactarte%20para...) | [Twitter](https://twitter.com/Giorgio_Code) | [LinkedIn](https://www.linkedin.com/in/jorge-angel-paez/)
 
@@ -13,3 +13,4 @@
 ## HTML, CSS, SASS, Bootstrap 5
 [Web EstudioDOM (HTML5 + CSS3 + Bootstrap 5 + SASS) ](https://github.com/GiorgioCode/estudiodom-bootstrap)
 [Web EstudioDOM (HTML5 + CSS3)](https://github.com/GiorgioCode/estudiodom)
+![GiorgioCode's GitHub stats](https://github-readme-stats.vercel.app/api?username=GiorgioCode&count_private=true&show_icons=true&theme=synthwave)
