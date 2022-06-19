@@ -108,3 +108,7 @@ body {
   vertical-align: -.125em;
   fill: currentColor;
 }
+
+.spacer {
+  height: 2rem;
+}
