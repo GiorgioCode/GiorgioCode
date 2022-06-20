@@ -57,6 +57,10 @@
                   <div class="col-md-10 mx-auto col-lg-5">
                     <form action="https://formspree.io/f/mnqwjdvg" method="POST" id="contacto" class="p-4 p-md-5 border rounded-3 bg-light">
                       <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="su nombre" name="name">
+                        <label for="floatingInput">Nombre</label>
+                      </div>
+                      <div class="form-floating mb-3">
                         <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
                         <label for="floatingInput">Email</label>
                       </div>
@@ -73,18 +77,8 @@
         </section>
     </main>
     <div class="b-example-divider"></div>
-    <footer>
-      <div class="container">
-        <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
-          <p class="col-md-6 mb-0 text-muted">&copy; 2021 Jorge Angel PAEZ</p>
-          <ul class="nav col-md-6 justify-content-center">
-            <li class="nav-item"><a href="../index.html" class="nav-link px-1 text-muted">Acerca de mi</a></li>
-            <li class="nav-item"><a href="./experiencia.html" class="nav-link px-1 text-muted">Experiencia</a></li>
-            <li class="nav-item"><a href="./habilidades.html" class="nav-link px-1 text-muted">Habilidades</a></li>
-            <li class="nav-item"><a href="./blog.html" class="nav-link px-1 text-muted">Blog</a></li>
-          </ul>
-        </footer>
-      </div>
+    <footer class="d-flex col-md-10 justify-content-end align-items-center py-3 my-4">
+      <p class=" mb-0 text-muted">&copy; 2021 Jorge Angel PAEZ</p>
     </footer>
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>              
     <script src="../js/bootstrap.bundle.min.js"></script>
