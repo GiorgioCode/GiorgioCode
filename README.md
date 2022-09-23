@@ -1,4 +1,4 @@
-# Hola! soy Jorge Paez :smiley: :computer:, FRONTEND DEVELOPER estudiando Stack MERN (MongoDB - Express.js -  React.js - Node.js )
+# Hola! soy Jorge Paez :smiley: :computer:, Desarrollador Front-end 
 ![enter image description here](https://c.tenor.com/UttC4AITYR4AAAAd/full-stack-developer.gif)
 
 # :large_blue_circle: Mis redes:
