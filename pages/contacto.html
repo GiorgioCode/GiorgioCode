@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/cyber.css">
-    <link rel="stylesheet" href="../icons/icons.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Jorge Angel PAEZ - Desarrollador web</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/cyber.css">
+  <link rel="stylesheet" href="../icons/icons.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script type="text/javascript"
+    src="https://platform-api.sharethis.com/js/sharethis.js#property=62968545d4f4b10019d84503&product=inline-share-buttons"
+    async="async"></script>
+  <title>Jorge Angel PAEZ - Desarrollador Front End</title>
 </head>
+
 <body>
   <nav class="navbar navbar-expand-lg fs-5 fixed-top navbar-dark bg-primary" aria-label="Main navigation">
     <div class="container-fluid">
@@ -16,7 +22,7 @@
       <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-  
+
       <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav ms-3 me-auto mb-2 mb-lg-0">
           <li class="nav-item px-1 py-1">
@@ -29,9 +35,6 @@
             <a class="nav-link" href="habilidades.html">Habilidades</a>
           </li>
           <li class="nav-item px-1 py-1">
-            <a class="nav-link" href="blog.html">Blog</a>
-          </li>
-          <li class="nav-item px-1 py-1">
             <a class="nav-link" href="Portafolio.html">Portafolio</a>
           </li>
           <li class="nav-item px-1 py-1">
@@ -39,49 +42,62 @@
           </li>
         </ul>
         <form class="iconos float-end">
-          <a href="https://github.com/GiorgioCode" target="_blank" class="btn fs-4 btn-outline-dark mx-1 my-2 my-sm-0 rounded" type="submit"><i class="bi bi-github"></i></a>
-          <a href="https://www.linkedin.com/in/jorge-angel-paez" target="_blank" class="btn fs-4 btn-outline-info mx-1 my-2 my-sm-0 rounded" type="submit"><i class="bi bi-linkedin"></i></a>
-          <a href="https://twitter.com/Giorgio_Code/" target="_blank" class="btn fs-4 btn-outline-light mx-1 my-2 my-sm-0 rounded" type="submit"><i class="bi bi-twitter"></i></a>    
-          </form>
+          <a href="https://github.com/GiorgioCode" target="_blank"
+            class="btn fs-4 btn-outline-dark mx-1 my-2 my-sm-0 rounded" type="submit"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/jorge-angel-paez" target="_blank"
+            class="btn fs-4 btn-outline-info mx-1 my-2 my-sm-0 rounded" type="submit"><i class="bi bi-linkedin"></i></a>
+          <a href="https://twitter.com/Giorgio_Code/" target="_blank"
+            class="btn fs-4 btn-outline-light mx-1 my-2 my-sm-0 rounded" type="submit"><i class="bi bi-twitter"></i></a>
+        </form>
       </div>
     </div>
   </nav>
-    <main>
-        <section>
-            <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-                <div class="row align-items-center g-lg-5 py-5">
-                  <div class="col-lg-7 text-center text-lg-start">
-                    <h1 class="display-4 fw-bold lh-1 mb-3">Hagamos realidad tu proyecto!</h1>
-                    <p class="col-lg-10 fs-4">Contáctame y comencemos juntos el camino hacia tu nueva presencia en la web.</p>
-                  </div>
-                  <div class="col-md-10 mx-auto col-lg-5">
-                    <form action="https://formspree.io/f/mnqwjdvg" method="POST" id="contacto" class="p-4 p-md-5 border rounded-3 bg-light">
-                      <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="su nombre" name="name">
-                        <label for="floatingInput">Nombre</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email">
-                        <label for="floatingInput">Email</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" name="message" style="height: 100px"></textarea>
-                        <label for="floatingTextarea2">Mensaje</label>
-                      </div>
-                      <button class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
-                      <hr class="my-4">
-                    </form>
-                  </div>
-                </div>
+  <main>
+    <section>
+      <div class="container col-xl-10 col-xxl-8 px-4 py-1">
+        <div class="row align-items-center g-lg-5 py-4">
+          <div data-aos="zoom-out-right" class="col-lg-7 text-center text-lg-start">
+            <h1 class="display-4 fw-bold lh-1 mb-3">Hagamos realidad tu proyecto!</h1>
+            <p class="col-lg-10 fs-4">Contáctame y comencemos juntos el camino hacia tu nueva presencia en la web.</p>
+          </div>
+          <div data-aos="zoom-out-left" class="col-md-10 mx-auto col-lg-5">
+            <form id="formulario" action="https://formspree.io/f/mnqwjdvg" method="POST" id="contacto"
+              class="p-4 p-md-5 border rounded-3 bg-light">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="su nombre" name="name">
+                <label for="floatingInput">Nombre</label>
               </div>
-        </section>
-    </main>
-    <div class="b-example-divider"></div>
-    <footer class="d-flex col-md-10 justify-content-end align-items-center py-3 my-4">
-      <p class=" mb-0 text-muted">&copy; 2021 Jorge Angel PAEZ</p>
-    </footer>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>              
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/offcanvas.js"></script>
+              <div class="form-floating mb-3">
+                <input required type="email" class="form-control" id="floatingInput" placeholder="name@example.com"
+                  name="email">
+                <label for="floatingInput">Email</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" name="message"
+                  style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Mensaje</label>
+              </div>
+              <button id="enviar" class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
+              <hr class="my-4">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="sharethis-inline-share-buttons"></div>
+  </main>
+  <div class="b-example-divider"></div>
+  <footer class="d-flex col-md-10 justify-content-end align-items-center py-3 my-4">
+    <p class=" mb-0 text-muted">&copy; 2021 Jorge Angel PAEZ</p>
+  </footer>
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/offcanvas.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../js/envio.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
+
 </html>
