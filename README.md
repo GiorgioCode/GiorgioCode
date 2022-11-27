@@ -7,7 +7,6 @@
 [![Whatsapp](https://img.icons8.com/color/96/null/whatsapp--v1.png)](https://api.whatsapp.com/send?phone=5492932540493&text=Me%20interesa%20contactarte%20para...)
 [![Twitter](https://img.icons8.com/color/96/null/twitter--v1.png)](https://twitter.com/Giorgio_Code)
 [![LinkedIn](https://img.icons8.com/color/96/null/linkedin-circled--v1.png)](https://www.linkedin.com/in/jorge-angel-paez/)
-[![Web](https://img.icons8.com/fluency/96/null/internet.png)](https://jorgepaez.vercel.app/)
 
 ---
 
