@@ -1,6 +1,6 @@
 # Hola! soy Jorge Paez :smiley: :computer:, Desarrollador Front-End
 
-[![Mi web](portfolio.gif)](https://jorgepaez.vercel.app)
+[![Mi web](portfolio.jpg)](https://jorgepaez.vercel.app)
 
 ---
 
