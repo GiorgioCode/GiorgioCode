@@ -5,13 +5,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $consulta = $_POST["consulta"];
 
     // Dirección de correo del desarrollador (cambiar por el correo del destinatario)
-    $correo_desarrollador = "mail_desarrollador@mail.com";
+    $correo_desarrollador = "jorgeangelpaez@gmail.com";
 
     // Asunto del correo
     $asunto_desarrollador = "Consulta de Contacto";
 
     // Cuerpo del correo para el desarrollador
-    $mensaje_desarrollador = "Hola Desarrollador,\n\n";
+    $mensaje_desarrollador = "Hola Jorge,\n\n";
     $mensaje_desarrollador .= "Has recibido una nueva consulta de contacto:\n\n";
     $mensaje_desarrollador .= "Nombre: $nombre\n";
     $mensaje_desarrollador .= "Email: $email\n";
