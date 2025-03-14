@@ -1,0 +1,14 @@
+{
+  "name": "Jorge Angel Paez",
+  "short_name": "Jorge",
+  "icons": [
+    {
+      "src": "/favicon/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#bd93f9",
+  "background_color": "#282a36",
+  "display": "standalone"
+}

@@ -1,0 +1,33 @@
+{
+  "home": {
+    "title": "Jorge Angel Paez",
+    "subtitle": "Desarrollador Front End | Instructor de JavaScript & Python",
+    "description": "Profesional especializado en Tecnologías de la Información con amplia experiencia en diferentes roles y herramientas. En los últimos años, he enfocado mi desarrollo en el área de Desarrollo Front End, complementando mi actividad profesional independiente con la enseñanza de JavaScript y Python. Combino habilidades técnicas con experiencia en gestión y administración.",
+    "location": "Brown 1312, 8109 Punta Alta, Buenos Aires, Argentina",
+    "contact": "+54 2932 440956 | jorgeangelpaez@gmail.com"
+  },
+  "navigation": {
+    "menu": "Menú",
+    "home": "Inicio",
+    "experience": "Experiencia",
+    "education": "Educación",
+    "skills": "Habilidades"
+  },
+  "education": {
+    "title": "Formación Académica",
+    "certifications": "Certificaciones"
+  },
+  "skills": {
+    "technical": "Habilidades Técnicas",
+    "languages": "Idiomas"
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Oscuro"
+  },
+  "language": {
+    "select": "Idioma",
+    "en": "Inglés",
+    "es": "Español"
+  }
+}

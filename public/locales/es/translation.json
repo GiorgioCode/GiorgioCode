@@ -1,0 +1,52 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "experience": "Experiencia",
+    "education": "Educación",
+    "skills": "Habilidades",
+    "contact": "Contacto",
+    "menu": "Menú"
+  },
+  "language": {
+    "select": "Idioma",
+    "es": "Español",
+    "en": "English"
+  },
+  "theme": {
+    "light": "Modo Claro",
+    "dark": "Modo Oscuro"
+  },
+  "home": {
+    "title": "Jorge Angel Paez",
+    "subtitle": "Desarrollador de Software",
+    "description": "Desarrollador de software con más de 6 años de experiencia en el desarrollo de aplicaciones web modernas. Apasionado por la tecnología y el aprendizaje continuo, con sólidos conocimientos en React, Node.js, y arquitecturas cloud. Comprometido con la calidad del código y las mejores prácticas de desarrollo.",
+    "location": "Buenos Aires, Argentina",
+    "contact": "jorgeangelpaez@gmail.com",
+    "downloadCV": "Descargar CV",
+    "emailCopied": "Email copiado",
+    "emailCopiedDesc": "El email ha sido copiado al portapapeles"
+  },
+  "skills": {
+    "technical": "Habilidades Técnicas",
+    "soft": "Habilidades Blandas",
+    "languages": "Idiomas"
+  },
+  "education": {
+    "title": "Formación Académica",
+    "certifications": "Certificaciones"
+  },
+  "contact": {
+    "title": "Contáctame",
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "success": "¡Mensaje enviado con éxito!",
+    "error": "Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.",
+    "placeholder": {
+      "name": "Tu nombre",
+      "email": "tu.email@ejemplo.com",
+      "message": "Escribe tu mensaje aquí..."
+    }
+  }
+}
