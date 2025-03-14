@@ -9,6 +9,8 @@ import Skills from './components/Skills'
 import Contact from './components/Contact'
 import PageTransition from './components/PageTransition'
 import ParticlesBackground from './components/ParticlesBackground'
+import Projects from './components/Projects'
+import About from './components/About'
 
 const AppContent = () => {
   const location = useLocation()
@@ -63,9 +65,19 @@ const AppContent = () => {
                 <Skills />
               </PageTransition>
             } />
+            <Route path="/projects" element={
+              <PageTransition key="projects">
+                <Projects />
+              </PageTransition>
+            } />
             <Route path="/contact" element={
               <PageTransition key="contact">
                 <Contact />
+              </PageTransition>
+            } />
+            <Route path="/about" element={
+              <PageTransition key="about">
+                <About />
               </PageTransition>
             } />
             <Route path="*" element={<Navigate to="/" replace />} />

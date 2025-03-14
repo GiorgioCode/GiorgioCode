@@ -1,9 +1,9 @@
 {
   "home": {
     "title": "Jorge Angel Paez",
-    "subtitle": "Desarrollador Front End | Instructor de JavaScript & Python",
+    "subtitle": "Desarrollador de Software | Instructor de JavaScript & Python",
     "description": "Profesional especializado en Tecnologías de la Información con amplia experiencia en diferentes roles y herramientas. En los últimos años, he enfocado mi desarrollo en el área de Desarrollo Front End, complementando mi actividad profesional independiente con la enseñanza de JavaScript y Python. Combino habilidades técnicas con experiencia en gestión y administración.",
-    "location": "Brown 1312, 8109 Punta Alta, Buenos Aires, Argentina",
+    "location": "Buenos Aires, Argentina",
     "contact": "+54 2932 440956 | jorgeangelpaez@gmail.com"
   },
   "navigation": {
@@ -11,7 +11,10 @@
     "home": "Inicio",
     "experience": "Experiencia",
     "education": "Educación",
-    "skills": "Habilidades"
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "about": "Acerca de"
   },
   "education": {
     "title": "Formación Académica",
@@ -29,5 +32,131 @@
     "select": "Idioma",
     "en": "Inglés",
     "es": "Español"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "visit": "Visitar",
+    "repository": "Repositorio",
+    "code": "Código",
+    "video": "Video",
+    "dates": {
+      "febrero": "Febrero",
+      "marzo": "Marzo",
+      "julio": "Julio",
+      "agosto": "Agosto",
+      "diciembre": "Diciembre",
+      "enero": "Enero"
+    },
+    "status": {
+      "inProgress": "En proceso"
+    },
+    "aifolder": {
+      "title": "AI Folder (En proceso)",
+      "description": "Aplicación para compartir recursos relacionados con aprendizaje y desarrollo de Inteligencia Artificial"
+    },
+    "calificapp": {
+      "title": "CalificApp (En proceso)",
+      "description": "Aplicación para registro de datos y calificaciones de alumnos"
+    },
+    "gamex": {
+      "title": "Game-X Store",
+      "description": "Aplicación ecommerce de venta de Videojuegos"
+    },
+    "greencow": {
+      "title": "GreenCow",
+      "description": "Aplicación para facturacion y atención de consumos en mesas de restaurante"
+    },
+    "contacts": {
+      "title": "Contactos",
+      "description": "Práctica Agenda de contactos con buscador"
+    },
+    "bisiesto": {
+      "title": "Bisiesto",
+      "description": "Calculador de años bisiestos"
+    },
+    "colombos": {
+      "title": "Colombos Pizza",
+      "description": "Sitio web de pizzeria"
+    },
+    "pendientes": {
+      "title": "Pendientes",
+      "description": "Lista de pendientes"
+    },
+    "tateti": {
+      "title": "Ta Te Ti",
+      "description": "Juego de Ta-Te-Ti o Tic-Tac-Toe"
+    },
+    "compras": {
+      "title": "Compras",
+      "description": "Sitio web sobre agencia de servicios financieros"
+    },
+    "fizzbuzz": {
+      "title": "Generador FizzBuzz",
+      "description": "Práctica generación de sucesion FizzBuzz"
+    },
+    "dosificador": {
+      "title": "Dosificador",
+      "description": "Calculador de dosis y horarios de toma de medicamentos"
+    },
+    "estudiodom2": {
+      "title": "Estudio DOM 2",
+      "description": "Sitio web de agencia de Diseño y Desarrollo web"
+    },
+    "estudiodom": {
+      "title": "Estudio DOM",
+      "description": "Sitio web de agencia de Diseño y Desarrollo web"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "name": "Nombre",
+    "email": "Correo Electrónico",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "success": "¡Mensaje enviado con éxito!",
+    "error": "Error al enviar el mensaje. Por favor, inténtalo de nuevo.",
+    "placeholder": {
+      "name": "Tu nombre",
+      "email": "tu@email.com",
+      "message": "Escribe tu mensaje aquí..."
+    }
+  },
+  "about": {
+    "title": "Tecnologías Utilizadas",
+    "description": "Este portfolio fue construido utilizando tecnologías modernas y las mejores prácticas de desarrollo web. A continuación se detallan los principales componentes y herramientas utilizados en su desarrollo.",
+    "technologies": {
+      "react": "Biblioteca JavaScript para construir interfaces de usuario interactivas y dinámicas.",
+      "chakra": "Sistema de diseño modular y accesible que proporciona componentes React reutilizables.",
+      "framer": "Biblioteca de animaciones para crear movimientos fluidos e interactivos.",
+      "i18next": "Framework de internacionalización que permite la traducción completa del sitio.",
+      "emailjs": "Servicio que permite enviar emails directamente desde el frontend sin necesidad de backend.",
+      "github": "Plataforma de control de versiones y colaboración para el desarrollo del código."
+    },
+    "features": {
+      "responsive": "Diseño totalmente responsive",
+      "theme": "Sistema de temas personalizables",
+      "components": "Componentes accesibles",
+      "hooks": "Hooks personalizados",
+      "animations": "Animaciones fluidas",
+      "gestures": "Gestos interactivos",
+      "transitions": "Transiciones suaves",
+      "variants": "Variantes de animación",
+      "translation": "Traducciones dinámicas",
+      "languages": "Múltiples idiomas",
+      "namespaces": "Organización por namespaces",
+      "fallback": "Sistema de respaldo",
+      "email": "Envío de emails",
+      "templates": "Plantillas personalizables",
+      "clientside": "Procesamiento del lado del cliente",
+      "customization": "Personalización completa",
+      "version": "Control de versiones",
+      "deployment": "Despliegue automático",
+      "collaboration": "Colaboración en equipo",
+      "hosting": "Alojamiento web"
+    },
+
+    "footer": {
+      "text": "Explora el código fuente completo en"
+    }
   }
 }

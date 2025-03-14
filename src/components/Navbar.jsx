@@ -26,7 +26,10 @@ const Navbar = () => {
   const { t } = useTranslation()
   const { colorMode, toggleColorMode } = useColorMode()
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const isMobile = useBreakpointValue({ base: true, md: false })
+  const isMobile = useBreakpointValue({
+    base: true,
+    xl: false
+  })
 
   // Pre-compute all color mode values
   const mobileButtonHoverBg = useColorModeValue('whiteAlpha.200', 'whiteAlpha.100')
@@ -136,6 +139,16 @@ const Navbar = () => {
             </Link>
             <Link
               as={RouterLink}
+              to="/projects"
+              color={textColor}
+              _hover={{ color: linkHoverColor }}
+              _active={{ color: linkActiveColor }}
+              transition="color 0.2s"
+            >
+              {t('navigation.projects')}
+            </Link>
+            <Link
+              as={RouterLink}
               to="/contact"
               color={textColor}
               _hover={{ color: linkHoverColor }}
@@ -143,6 +156,16 @@ const Navbar = () => {
               transition="color 0.2s"
             >
               {t('navigation.contact')}
+            </Link>
+            <Link
+              as={RouterLink}
+              to="/about"
+              color={textColor}
+              _hover={{ color: linkHoverColor }}
+              _active={{ color: linkActiveColor }}
+              transition="color 0.2s"
+            >
+              {t('navigation.about')}
             </Link>
 
             <LanguageSelector />
@@ -215,6 +238,17 @@ const Navbar = () => {
                 </Link>
                 <Link
                   as={RouterLink}
+                  to="/projects"
+                  color={drawerTextColor}
+                  _hover={{ color: linkHoverColor }}
+                  _active={{ color: linkActiveColor }}
+                  transition="color 0.2s"
+                  onClick={onClose}
+                >
+                  {t('navigation.projects')}
+                </Link>
+                <Link
+                  as={RouterLink}
                   to="/contact"
                   color={drawerTextColor}
                   _hover={{ color: linkHoverColor }}
@@ -223,6 +257,17 @@ const Navbar = () => {
                   onClick={onClose}
                 >
                   {t('navigation.contact')}
+                </Link>
+                <Link
+                  as={RouterLink}
+                  to="/about"
+                  color={drawerTextColor}
+                  _hover={{ color: linkHoverColor }}
+                  _active={{ color: linkActiveColor }}
+                  transition="color 0.2s"
+                  onClick={onClose}
+                >
+                  {t('navigation.about')}
                 </Link>
 
                 <Box alignSelf="center">

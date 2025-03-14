@@ -9,19 +9,43 @@
     <link rel="manifest" href="/favicon/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jorge Paez | Portfolio</title>
+    <meta name="description" content="Portfolio personal de Jorge Paez - Desarrollador de Software & Instructor de JavaScript y Python" />
+    <meta name="theme-color" content="#282a36" />
+    <meta name="color-scheme" content="light dark" />
     <style>
+      :root {
+        --light-gradient: linear-gradient(to bottom right, #63b3ed, #90cdf4, #ffffff);
+        --dark-gradient: linear-gradient(to bottom right, #282a36, #44475a);
+      }
+
       body {
         margin: 0;
         min-height: 100vh;
-        background: linear-gradient(to bottom right, #63b3ed, #90cdf4, #ffffff);
+        background: var(--light-gradient);
+        transition: background 0.3s ease-in-out;
       }
+
       @media (prefers-color-scheme: dark) {
         body {
-          background: linear-gradient(to bottom right, #282a36, #1a1b26);
+          background: var(--dark-gradient);
         }
       }
+
       #root {
         min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      ::selection {
+        background: #bd93f9;
+        color: #f8f8f2;
       }
     </style>
   </head>

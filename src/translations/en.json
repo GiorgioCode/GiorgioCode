@@ -1,9 +1,9 @@
 {
   "home": {
     "title": "Jorge Angel Paez",
-    "subtitle": "Front End Developer | JavaScript & Python Instructor",
+    "subtitle": "Software Developer | JavaScript & Python Instructor",
     "description": "IT professional specialized in various roles and tools. In recent years, I have focused my development on Front End Development, complementing my independent professional activity with teaching JavaScript and Python. I combine technical skills with management and administration experience.",
-    "location": "Brown 1312, 8109 Punta Alta, Buenos Aires, Argentina",
+    "location": "Buenos Aires, Argentina",
     "contact": "+54 2932 440956 | jorgeangelpaez@gmail.com"
   },
   "navigation": {
@@ -11,7 +11,10 @@
     "home": "Home",
     "experience": "Experience",
     "education": "Education",
-    "skills": "Skills"
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "about": "About"
   },
   "education": {
     "title": "Academic Background",
@@ -29,5 +32,131 @@
     "select": "Language",
     "en": "English",
     "es": "Spanish"
+  },
+  "projects": {
+    "title": "Projects",
+    "visit": "Visit",
+    "repository": "Repository",
+    "code": "Code",
+    "video": "Video",
+    "dates": {
+      "febrero": "February",
+      "marzo": "March",
+      "julio": "July",
+      "agosto": "August",
+      "diciembre": "December",
+      "enero": "January"
+    },
+    "status": {
+      "inProgress": "In Progress"
+    },
+    "aifolder": {
+      "title": "AI Folder (In Progress)",
+      "description": "Application for sharing resources related to AI learning and development"
+    },
+    "calificapp": {
+      "title": "CalificApp (In Progress)",
+      "description": "Application for recording student data and grades"
+    },
+    "gamex": {
+      "title": "Game-X Store",
+      "description": "Video game e-commerce application"
+    },
+    "greencow": {
+      "title": "GreenCow",
+      "description": "Application for billing and managing restaurant table orders"
+    },
+    "contacts": {
+      "title": "Contacts",
+      "description": "Contact book practice with search functionality"
+    },
+    "bisiesto": {
+      "title": "Leap Year",
+      "description": "Leap year calculator"
+    },
+    "colombos": {
+      "title": "Colombos Pizza",
+      "description": "Pizza restaurant website"
+    },
+    "pendientes": {
+      "title": "To-Do List",
+      "description": "To-do list application"
+    },
+    "tateti": {
+      "title": "Tic-Tac-Toe",
+      "description": "Tic-Tac-Toe game"
+    },
+    "compras": {
+      "title": "Purchases",
+      "description": "Financial services agency website"
+    },
+    "fizzbuzz": {
+      "title": "FizzBuzz Generator",
+      "description": "FizzBuzz sequence generation practice"
+    },
+    "dosificador": {
+      "title": "Dosage Calculator",
+      "description": "Calculator for medication dosage and schedules"
+    },
+    "estudiodom2": {
+      "title": "Estudio DOM 2",
+      "description": "Web design and development agency website"
+    },
+    "estudiodom": {
+      "title": "Estudio DOM",
+      "description": "Web design and development agency website"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send",
+    "success": "Message sent successfully!",
+    "error": "Error sending message. Please try again.",
+    "placeholder": {
+      "name": "Your name",
+      "email": "your@email.com",
+      "message": "Write your message here..."
+    }
+  },
+  "about": {
+    "title": "Technologies",
+    "description": "This portfolio was built using modern technologies and web development best practices. Below are the main components and tools used in its development.",
+    "technologies": {
+      "react": "JavaScript library for building interactive and dynamic user interfaces.",
+      "chakra": "Modular and accessible design system that provides reusable React components.",
+      "framer": "Animation library for creating smooth and interactive motions.",
+      "i18next": "Internationalization framework that enables complete site translation.",
+      "emailjs": "Service that allows sending emails directly from the frontend without a backend.",
+      "github": "Version control and collaboration platform for code development."
+    },
+    "features": {
+      "responsive": "Fully responsive design",
+      "theme": "Customizable theme system",
+      "components": "Accessible components",
+      "hooks": "Custom hooks",
+      "animations": "Smooth animations",
+      "gestures": "Interactive gestures",
+      "transitions": "Smooth transitions",
+      "variants": "Animation variants",
+      "translation": "Dynamic translations",
+      "languages": "Multiple languages",
+      "namespaces": "Namespace organization",
+      "fallback": "Fallback system",
+      "email": "Email sending",
+      "templates": "Customizable templates",
+      "clientside": "Client-side processing",
+      "customization": "Complete customization",
+      "version": "Version control",
+      "deployment": "Automatic deployment",
+      "collaboration": "Team collaboration",
+      "hosting": "Web hosting"
+    },
+
+    "footer": {
+      "text": "Explore the complete source code on"
+    }
   }
 }
