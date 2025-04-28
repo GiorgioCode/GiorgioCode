@@ -48,10 +48,40 @@
       "julio": "Julio",
       "agosto": "Agosto",
       "diciembre": "Diciembre",
-      "enero": "Enero"
+      "enero": "Enero",
+      "abril": "Abril",
+      "mayo": "Mayo"
     },
     "status": {
       "inProgress": "En proceso"
+    },
+    "portfolio": {
+      "title": "Portfolio Personal (Nueva Versión)",
+      "description": "Actualización del portfolio personal incorporando un nuevo diseño y funcionalidades como temas claro y oscuro o traducción inglés español."
+    },
+    "turing": {
+      "title": "Charla con Alan Turing",
+      "description": "Chatbot que simula una charla con Alan Turing (Científico pionero de las Ciencias de la Computación)."
+    },
+    "markdown": {
+      "title": "Editor Markdown Simple",
+      "description": "Editor Markdown Simple con previsualización en tiempo real."
+    },
+    "pila": {
+      "title": "PILA (SaaS) Organizador tipo Kanban",
+      "description": "Aplicación SaaS (Software as a Service) que permite organizar tareas de manera tipo Kanban."
+    },
+    "operadores": {
+      "title": "Cuestionario de Práctica (Operadores Lógicos)",
+      "description": "Cuestionario de práctica para operadores lógicos en programación."
+    },
+    "repo_js2": {
+      "title": "Repositorio para alumnos (JavaScript Avanzado)",
+      "description": "Repositorio para alumnos de JavaScript Avanzado con material de estudio y prácticas."
+    },
+    "repo_js1": {
+      "title": "Repositorio para alumnos (JavaScript desde Cero)",
+      "description": "Repositorio para alumnos de JavaScript desde Cero con material de estudio y prácticas."
     },
     "aifolder": {
       "title": "AI Folder (En proceso)",

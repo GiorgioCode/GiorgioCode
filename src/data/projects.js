@@ -1,11 +1,64 @@
 export default [
   {
+    id: 'markdown',
+    image: '/images/projects/markdown.png',
+    liveUrl: 'https://markdown-simple.vercel.app/',
+    repoUrl: 'https://github.com/GiorgioCode/editor-markdown',
+    date: 'Mayo 2025',
+    useRepositorioText: true
+  },
+  {
+    id: 'turing',
+    image: '/images/projects/turing.png',
+    liveUrl: 'https://chatbot-turing.vercel.app/',
+    repoUrl: 'https://github.com/GiorgioCode/chatbot-alan-turing',
+    date: 'Abril 2025',
+    useRepositorioText: true
+  },
+  {
+    id: 'portfolio',
+    image: '/images/projects/portfolio.png',
+    liveUrl: 'https://jorgepaez.vercel.app/',
+    repoUrl: 'https://github.com/GiorgioCode/GiorgioCode',
+    date: 'Marzo 2025',
+    useRepositorioText: true
+  },
+  {
+    id: 'pila',
+    image: '/images/projects/pila.png',
+    liveUrl: 'https://pila-project.vercel.app/',
+    date: 'Marzo 2025',
+    useRepositorioText: false
+  },
+  {
+    id: 'operadores',
+    image: '/images/projects/operadores.png',
+    liveUrl: 'https://operadores-logicos-quiz.vercel.app/',
+    repoUrl: 'https://github.com/GiorgioCode/operadores-logicos-quiz',
+    date: 'Enero 2025',
+    useRepositorioText: true
+  },
+  {
+    id: 'repo_js2',
+    image: '/images/projects/repo_js2.png',
+    repoUrl: 'https://github.com/GiorgioCode/JavaScript_Desarrollador_Avanzado',
+    date: 'Julio 2024',
+    useRepositorioText: true
+  },
+  {
     id: 'aifolder',
     image: '/images/projects/aifolder.png',
     liveUrl: 'https://aifolder.onrender.com/',
     repoUrl: 'https://github.com/GiorgioCode/AI_folder',
     videoUrl: 'https://www.youtube.com/watch?v=jCBkcUTqzg4',
     date: 'Febrero 2023',
+    useRepositorioText: true
+  },
+  {
+    id: 'repo_js1',
+    image: '/images/projects/repo_js1.png',
+    repoUrl: 'https://github.com/GiorgioCode/repo-EducacionIT-6',
+    date: 'Julio 2022',
     useRepositorioText: true
   },
   {

@@ -48,10 +48,40 @@
       "julio": "July",
       "agosto": "August",
       "diciembre": "December",
-      "enero": "January"
+      "enero": "January",
+      "abril": "April",
+      "mayo": "May"
     },
     "status": {
       "inProgress": "In Progress"
+    },
+    "portfolio": {
+      "title": "Personal Portfolio (New Version)",
+      "description": "Updated personal portfolio with a new design and features like light and dark themes and English/Spanish translation."
+    },
+    "turing": {
+      "title": "Chat with Alan Turing",
+      "description": "Chatbot that simulates a conversation with Alan Turing (pioneer scientist in Computer Science)."
+    },
+    "markdown": {
+      "title": "Simple Markdown Editor",
+      "description": "Simple Markdown editor with real-time preview functionality."
+    },
+    "pila": {
+      "title": "PILA (SaaS) Kanban Organizer",
+      "description": "SaaS (Software as a Service) application that allows organizing tasks in a Kanban style."
+    },
+    "operadores": {
+      "title": "Practice Quiz (Logical Operators)",
+      "description": "Practice quiz for logical operators in programming."
+    },
+    "repo_js2": {
+      "title": "Repository for Students (Advanced JavaScript)",
+      "description": "Repository for Advanced JavaScript students with study materials and practice exercises."
+    },
+    "repo_js1": {
+      "title": "Repository for Students (JavaScript from Zero)",
+      "description": "Repository for JavaScript from Zero students with study materials and practice exercises."
     },
     "aifolder": {
       "title": "AI Folder (In Progress)",
