@@ -1,73 +1,130 @@
 <h1 align="center">Jorge Ángel Páez</h1>
-<h3 align="center">Software Engineer • Frontend/Backend & Systems Development</h3>
+<h3 align="center">Software Engineer • Systems Architecture • AI & Embedded Systems</h3>
 
 <p align="center">
-Software engineer focused on building reliable systems, scalable backend services, and modern web applications.
+Engineer focused on building efficient software systems, scalable backend architectures, and intelligent data-driven platforms.
 </p>
 
 ---
 
-## About Me
+# Engineering Profile
 
-Software Engineer with experience across the full stack, focused primarily on backend development, system architecture, and data-driven applications.
+Software Engineer working across **backend systems, data infrastructures, and embedded platforms**.
 
-I design and build scalable software systems using modern development practices, secure architectures, and maintainable codebases. My work spans web platforms, backend services, and data processing systems.
+My work focuses on the design and implementation of **efficient, secure, and scalable systems**, particularly in environments where **performance, reliability, and resource constraints** are important factors.
 
-Recently I have been working on architectures that integrate **vector databases, AI-assisted systems, and Retrieval-Augmented Generation (RAG)** pipelines.
+I regularly develop backend services using **Go, Python, and Java**, focusing on high-efficiency architectures and maintainable systems. I also research and build **AI-assisted platforms using vector databases and Retrieval-Augmented Generation (RAG)**.
 
-I also teach programming and software development, contributing to the growth of new developers while continuing to explore emerging technologies.
+In parallel, I develop **embedded and IoT solutions using C/C++**, integrating hardware devices with distributed software systems.
 
----
-
-## Current Work
-
-- Software development for **Armada Argentina**
-- Programming instructor at **EducacionIT**
-- Research and experimentation with **LLMs, vector databases, and AI-assisted systems**
+Another area of interest in my work is **cryptographic systems and secure software architectures**, including authentication, encryption, and data protection mechanisms.
 
 ---
 
-## Technical Areas
+# Current Work
 
-**Backend Development**
+* Software development and systems engineering for **Armada Argentina**
+* Programming instructor at **EducacionIT**
+* Research and experimentation in:
 
-- Python (Flask, Django)
-- Java (Spring)
-- Node.js
-- REST API design
-
-**Frontend**
-
-- JavaScript / TypeScript
-- React
-- Angular
-
-**Databases**
-
-- PostgreSQL
-- MySQL
-- SQLite
-- MongoDB
-
-**Infrastructure & Tools**
-
-- Linux
-- Docker
-- Git
-- Nginx
-
-**AI & Data Systems**
-
-- Vector Databases
-- Retrieval-Augmented Generation (RAG)
-- Embeddings pipelines
-- Contextual search systems
+  * AI-assisted systems
+  * Vector databases and semantic search
+  * Efficient backend architectures
+  * Cryptographic systems and secure infrastructure
 
 ---
 
-## Selected Technologies
+# Research & Engineering Interests
+
+Areas in which I actively research, experiment, and build systems:
+
+* Retrieval-Augmented Generation (RAG)
+* Vector databases and semantic search
+* Context-aware information systems
+* Cryptographic systems and secure authentication
+* Efficient backend architectures for constrained environments
+* Embedded systems and IoT integration
+* AI-assisted software systems
+* Data indexing and knowledge retrieval systems
+
+---
+
+# Architectures & Systems I Work With
+
+### AI / Knowledge Systems
+
+* RAG pipelines
+* Embeddings generation workflows
+* Semantic search architectures
+* Contextual retrieval systems
+* Vector databases (Qdrant)
+
+### Backend & Distributed Systems
+
+* High-efficiency services written in **Go**
+* REST APIs and service-oriented architectures
+* Data processing pipelines
+* Backend systems optimized for **low-resource environments**
+
+### Security & Cryptographic Systems
+
+* Secure authentication architectures
+* Password hashing and credential protection
+* Encryption-based data protection
+* Secure API design
+
+### Embedded Systems & IoT
+
+* Microcontroller-based systems
+* Hardware-software integration
+* Network-enabled embedded devices
+* IoT data integration with backend systems
+
+---
+
+# Technical Stack
+
+### Backend Development
+
+* Go
+* Python (Flask, Django)
+* Java (Spring)
+* Node.js
+
+### Frontend
+
+* JavaScript
+* TypeScript
+* React
+* Angular
+
+### Databases
+
+* PostgreSQL
+* MySQL
+* SQLite
+* MongoDB
+* Vector Databases (Qdrant)
+
+### Embedded Development
+
+* C
+* C++
+
+### Infrastructure & Tools
+
+* Linux
+* Docker
+* Nginx
+* Git
+* Bash
+
+---
+
+# Selected Technologies
 
 <p align="left">
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" width="40"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="40"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" width="40"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="40"/>
@@ -77,26 +134,28 @@ I also teach programming and software development, contributing to the growth of
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg" width="40"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="40"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" width="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" width="40"/>
 </p>
 
 ---
 
-## Publications & Writing
+# Writing & Publications
 
-I regularly write about software development and technology.
+I regularly write about software development, system architecture, and emerging technologies.
 
-LinkedIn  
+LinkedIn
 https://www.linkedin.com/in/jorge-angel-paez
 
 ---
 
-## Contact
+# Contact
 
-Portfolio  
+Portfolio
 https://jorgepaez.vercel.app
 
-Email  
-jorgeangelpaez@gmail.com
+Email
+[jorgeangelpaez@gmail.com](mailto:jorgeangelpaez@gmail.com)
 
 ---
 
