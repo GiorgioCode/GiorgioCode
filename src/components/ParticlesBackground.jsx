@@ -31,11 +31,11 @@ const ParticlesBackground = () => {
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
 
-    // Theme colors - Using stronger blues for light mode
-    const particleColor = colorMode === 'light' ? '#1A365D' : '#ff79c6' // Very dark blue in light mode, Pink in dark mode
-    const lineColor = colorMode === 'light' ? '#2A4365' : '#bd93f9' // Dark blue in light mode, Purple in dark mode
-    const particleOpacity = colorMode === 'light' ? 0.8 : 0.6
-    const lineOpacity = colorMode === 'light' ? 0.6 : 0.3
+    // Colores discretos: tonos slate/gris para aspecto sobrio
+    const particleColor = colorMode === 'light' ? '#64748b' : '#475569'
+    const lineColor = colorMode === 'light' ? '#94a3b8' : '#334155'
+    const particleOpacity = colorMode === 'light' ? 0.35 : 0.25
+    const lineOpacity = colorMode === 'light' ? 0.2 : 0.15
 
     const animate = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height)
@@ -100,7 +100,7 @@ const ParticlesBackground = () => {
       zIndex={1}
       sx={{
         pointerEvents: 'none',
-        opacity: colorMode === 'light' ? 0.9 : 0.7,
+        opacity: colorMode === 'light' ? 0.6 : 0.5,
         transition: 'opacity 0.2s ease'
       }}
     />

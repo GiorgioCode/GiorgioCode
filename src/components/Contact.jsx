@@ -31,10 +31,7 @@ const Contact = () => {
   const buttonBg = useColorModeValue('light.accent', 'dracula.purple');
   const buttonHoverBg = useColorModeValue('light.accentDark', 'dracula.pink');
   const inputBg = useColorModeValue('white', 'dracula.currentLine');
-  const headingGradient = useColorModeValue(
-    'linear(to-r, light.accent, light.accentDark)',
-    'linear(to-r, dracula.purple, dracula.pink)'
-  );
+  const headingColor = useColorModeValue('light.text', 'dracula.foreground');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -90,8 +87,8 @@ const Contact = () => {
             as="h2"
             size="xl"
             mb={6}
-            bgGradient={headingGradient}
-            bgClip="text"
+            color={headingColor}
+            fontWeight="600"
           >
             {t('contact.title')}
           </Heading>
@@ -108,8 +105,8 @@ const Contact = () => {
           bg={cardBg}
           boxShadow="md"
           _hover={{
-            transform: 'translateY(-2px)',
-            boxShadow: 'lg',
+            transform: 'translateY(-1px)',
+            boxShadow: 'md',
             transition: 'all 0.2s',
           }}
         >

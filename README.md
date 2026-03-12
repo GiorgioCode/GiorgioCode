@@ -158,11 +158,3 @@ Email
 [jorgeangelpaez@gmail.com](mailto:jorgeangelpaez@gmail.com)
 
 ---
-
-<p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=giorgiocode&show_icons=true&hide_border=true" />
-</p>
-
-<p align="center">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=giorgiocode&layout=compact&hide_border=true" />
-</p>

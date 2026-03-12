@@ -1,5 +1,56 @@
 export default [
   {
+    id: 'evaparti', // Prof. Eva Barrios - Landing page para Profesora de Matematicas + presupuestador de clases
+    image: '/images/projects/evaparti.png',
+    liveUrl: 'https://evabarrios.vercel.app/',
+    repoUrl: 'https://github.com/GiorgioCode/eva-parti',
+    date: 'feb 2026',
+    useRepositorioText: true
+  },
+
+  {
+    id: 'leialab', // LeiaLab -Landing agencia de automatizacion y desarrollo
+    image: '/images/projects/leialab.png',
+    liveUrl: 'https://leialab.vercel.app/',
+    repoUrl: '',
+    date: 'ene 2026',
+    useRepositorioText: false
+  },
+  {
+    id: 'gamehub', // Gamehub - ecommerce de venta de insumos y equipos de informatica. (Ejercicio tipo para alumnos de Bootcamp Full Stack de EducacionIT)
+    image: '/images/projects/gamehub.png',
+    liveUrl: 'https://final-bootcamp-fs-frontend.vercel.app/',
+    repoUrl: 'https://github.com/GiorgioCode/final-bootcamp-FS-FRONTEND',
+    repoUrlBackend: 'https://github.com/GiorgioCode/final-bootcamp-FS-BACKEND',
+    date: 'dic 2025',
+    useRepositorioText: true
+  },
+  {
+    id: 'efimer-chat', // Efimer Chat - Enlace de chat anonimo y cifrado serverless (p2p), con creacion de salas que se comparten mediante hash.
+    image: '/images/projects/efimer-chat.png',
+    liveUrl: 'https://efimer-chat.vercel.app/',
+    repoUrl: 'https://github.com/GiorgioCode/p2p-chat',
+    date: 'dic 2025',
+    useRepositorioText: true
+  },
+  {
+    id: 'freechat', // Freechat - Sala de chat libre y anonima.
+    image: '/images/projects/leialab.png',
+    liveUrl: 'https://freechat-anon.vercel.app/',
+    repoUrl: 'https://github.com/GiorgioCode/free-chat-frontend',
+    repoUrlBackend: 'https://github.com/GiorgioCode/free-chat-backend',
+    date: 'nov 2025',
+    useRepositorioText: true
+  },
+  {
+    id: 'api-argenta', // API Argenta - API y generador de datos mockup de personas de argentina.
+    image: '/images/projects/api-argenta.png',
+    liveUrl: 'https://api-argenta.vercel.app/',
+    repoUrl: 'https://github.com/GiorgioCode/api-argenta',
+    date: 'jun 2025',
+    useRepositorioText: true
+  },
+  {
     id: 'markdown',
     image: '/images/projects/markdown.png',
     liveUrl: 'https://markdown-simple.vercel.app/',

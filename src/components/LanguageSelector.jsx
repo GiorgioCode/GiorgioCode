@@ -5,13 +5,13 @@ const LanguageSelector = () => {
   const { i18n } = useTranslation()
   
   // Pre-compute all color mode values
-  const switchBorderColor = useColorModeValue('blue.400', 'dracula.purple')
-  const switchBgColor = useColorModeValue('gray.100', 'whiteAlpha.50')
+  const switchBorderColor = useColorModeValue('gray.300', 'dracula.currentLine')
+  const switchBgColor = useColorModeValue('gray.50', 'whiteAlpha.50')
   const switchTextColor = useColorModeValue('gray.800', 'dracula.foreground')
-  const switchTrackBg = useColorModeValue('gray.300', 'dracula.currentLine')
+  const switchTrackBg = useColorModeValue('gray.200', 'dracula.currentLine')
   const switchThumbBg = useColorModeValue('white', 'dracula.foreground')
-  const switchCheckedTrackBg = useColorModeValue('blue.400', 'dracula.purple')
-  const switchColorScheme = useColorModeValue('blue', 'purple')
+  const switchCheckedTrackBg = useColorModeValue('gray.600', 'dracula.purple')
+  const switchColorScheme = useColorModeValue('gray', 'gray')
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng)

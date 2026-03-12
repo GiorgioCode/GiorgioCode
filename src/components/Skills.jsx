@@ -53,9 +53,9 @@ const SkillCategory = ({ title, skills, delay = 0 }) => {
   const headingColor = useColorModeValue('light.accent', 'dracula.purple')
 
   const cardHoverStyle = {
-    transform: 'translateY(-2px)',
-    boxShadow: useColorModeValue('lg', 'dark-lg'),
-    borderColor: useColorModeValue('light.accent', 'dracula.purple'),
+    transform: 'translateY(-1px)',
+    boxShadow: useColorModeValue('md', 'lg'),
+    borderColor: useColorModeValue('gray.300', 'dracula.currentLine'),
     transition: 'all 0.2s'
   }
 
@@ -68,10 +68,10 @@ const SkillCategory = ({ title, skills, delay = 0 }) => {
     role: 'group',
     _hover: { 
       bg: useColorModeValue('light.hover', 'dracula.currentLine'),
-      borderColor: useColorModeValue('light.accent', 'dracula.purple'),
-      color: useColorModeValue('light.accent', 'dracula.purple'),
-      transform: 'translateY(-5px)',
-      boxShadow: 'xl'
+      borderColor: useColorModeValue('gray.400', 'dracula.purple'),
+      color: useColorModeValue('gray.700', 'dracula.purple'),
+      transform: 'translateY(-2px)',
+      boxShadow: 'md'
     }
   }
 
@@ -253,10 +253,7 @@ const Skills = () => {
     }
   ]
 
-  const headingGradient = useColorModeValue(
-    'linear(to-r, light.accent, light.accentDark)',
-    'linear(to-r, dracula.purple, dracula.pink)'
-  )
+  const headingColor = useColorModeValue('light.text', 'dracula.foreground')
 
   const getLocalizedLanguageData = (item) => ({
     language: currentLanguage === 'es' ? item.languageEs : item.language,
@@ -275,8 +272,8 @@ const Skills = () => {
             as="h2" 
             size="xl" 
             mb={8}
-            bgGradient={headingGradient}
-            bgClip="text"
+            color={headingColor}
+            fontWeight="600"
             letterSpacing="tight"
           >
             {t('skills.technical')}
@@ -303,8 +300,8 @@ const Skills = () => {
             as="h2" 
             size="xl" 
             mb={8}
-            bgGradient={headingGradient}
-            bgClip="text"
+            color={headingColor}
+            fontWeight="600"
             letterSpacing="tight"
           >
             {t('skills.languages')}

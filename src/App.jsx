@@ -11,17 +11,21 @@ import PageTransition from './components/PageTransition'
 import ParticlesBackground from './components/ParticlesBackground'
 import Projects from './components/Projects'
 import About from './components/About'
+import { useTranslation } from 'react-i18next'
+import { usePageSEO } from './hooks/usePageSEO'
 
 const AppContent = () => {
   const location = useLocation()
+  const { t } = useTranslation()
+  usePageSEO()
   const { colorMode } = useColorMode()
   const bgGradient = useColorModeValue(
-    'linear(to-br, blue.300, blue.100, white)',
-    'linear(to-br, #282a36, #44475a)'
+    'linear(to-b, #f1f5f9, #e2e8f0)',
+    'linear(to-b, #0f1219, #1e293b)'
   )
 
-  const textColor = useColorModeValue('gray.700', '#f8f8f2')
-  const borderColor = useColorModeValue('blue.100', '#44475a')
+  const textColor = useColorModeValue('gray.800', '#e2e8f0')
+  const borderColor = useColorModeValue('gray.200', '#1e293b')
 
   return (
     <Box 
@@ -32,16 +36,37 @@ const AppContent = () => {
       position="relative"
       overflow="hidden"
     >
+      <Box
+        as="a"
+        href="#main-content"
+        position="absolute"
+        left="-9999px"
+        zIndex={100}
+        bg={useColorModeValue('white', 'gray.800')}
+        color={textColor}
+        px={4}
+        py={2}
+        fontWeight="semibold"
+        borderWidth="1px"
+        borderColor={borderColor}
+        borderRadius="md"
+        _focus={{ left: 4, top: '72px' }}
+        transition="left 0.2s"
+      >
+        {t('a11y.skipToContent')}
+      </Box>
       <ParticlesBackground />
       <Navbar />
       <Container 
         as="main"
+        id="main-content"
         maxW="container.xl" 
         mt="64px"
         py={8}
         px={{ base: 4, md: 8 }}
         position="relative"
         zIndex={1}
+        tabIndex={-1}
       >
         <AnimatePresence mode="wait" initial={true}>
           <Routes key={location.pathname}>

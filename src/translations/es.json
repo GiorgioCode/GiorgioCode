@@ -1,10 +1,17 @@
 {
   "home": {
-    "title": "Jorge Angel Paez",
-    "subtitle": "Desarrollador de Software | Instructor de JavaScript & Python",
-    "description": "Profesional especializado en Tecnologías de la Información con amplia experiencia en diferentes roles y herramientas. En los últimos años, he enfocado mi experiencia en el Desarrollo Front End, complementando mi actividad profesional independiente con la enseñanza de JavaScript y Python. Combino habilidades técnicas con experiencia en gestión y administración.",
+    "title": "Jorge Ángel Páez",
+    "subtitle": "Desarrollador de Software • Arquitectura de Sistemas • IA y Sistemas Embebidos",
+    "description": "Desarrollador de software enfocado en sistemas eficientes, arquitecturas backend escalables y plataformas inteligentes basadas en datos. Trabajo en el diseño e implementación de sistemas seguros y escalables, con foco en rendimiento, confiabilidad y entornos con restricciones de recursos.",
+    "descriptionExtended": "Desarrollo servicios backend con Go, Python y Java, y trabajo en plataformas asistidas por IA con bases de datos vectoriales y RAG. En paralelo desarrollo soluciones embebidas e IoT con C/C++, integrando hardware con sistemas distribuidos. Me interesa el desarrollo de soluciones que implementen capas de cifrado y transmisión de datos seguros, así como también la implementación de arquitecturas robustas según normas MIL-STD-810.",
+    "currentWorkTitle": "Trabajo actual",
+    "currentWork": "Desarrollo de software e ingeniería de sistemas para Armada Argentina. Instructor de programación en EducaciónIT. Investigación y experimentación en sistemas asistidos por IA, bases de datos vectoriales y búsqueda semántica, arquitecturas backend eficientes y sistemas criptográficos.",
+    "interestsTitle": "Intereses en investigación e ingeniería",
+    "interests": "RAG, bases de datos vectoriales y búsqueda semántica, sistemas de información con contexto, criptografía y autenticación segura, arquitecturas backend para entornos con restricciones, sistemas embebidos e IoT, indexación de datos y recuperación de conocimiento.",
+    "techFocusTitle": "Stack y entornos",
+    "techFocus": "Backend: Go, Python, Java, Node.js. Frontend: JavaScript, TypeScript, React, Angular. Bases de datos: PostgreSQL, vectoriales (Qdrant). Embebidos: C/C++. Infraestructura: Linux, Docker, Git.",
     "location": "Buenos Aires, Argentina",
-    "contact": "+54 2932 440956 | jorgeangelpaez@gmail.com",
+    "contact": "jorgeangelpaez@gmail.com",
     "downloadCV": "Descargar CV",
     "emailCopied": "Email copiado",
     "emailCopiedDesc": "El email ha sido copiado al portapapeles"
@@ -36,24 +43,70 @@
     "en": "Inglés",
     "es": "Español"
   },
+  "a11y": {
+    "skipToContent": "Saltar al contenido principal"
+  },
+  "seo": {
+    "siteName": "Jorge Ángel Páez",
+    "home": { "pageTitle": "Inicio", "pageDescription": "Jorge Ángel Páez — Desarrollador de software: sistemas eficientes, backend escalable (Go, Python, Java), plataformas con IA (RAG), embebidos e IoT. Buenos Aires." },
+    "experience": { "pageTitle": "Experiencia", "pageDescription": "Experiencia laboral de Jorge Ángel Páez: EducaciónIT, desarrollo frontend y backend, gestión de sistemas. Armada Argentina." },
+    "education": { "pageTitle": "Formación", "pageDescription": "Formación académica y certificaciones: Licenciatura en Informática, MBA, Especialista en Telecomunicaciones, certificaciones Scrum." },
+    "skills": { "pageTitle": "Habilidades", "pageDescription": "Habilidades técnicas e idiomas: Go, Python, Java, React, bases de datos, sistemas embebidos, inglés." },
+    "projects": { "pageTitle": "Proyectos", "pageDescription": "Proyectos de Jorge Ángel Páez: portfolio, e-commerce, chatbots, APIs, aplicaciones web y repositorios educativos." },
+    "contact": { "pageTitle": "Contacto", "pageDescription": "Contactar a Jorge Ángel Páez. Email y formulario de contacto. Buenos Aires, Argentina." },
+    "about": { "pageTitle": "Acerca del sitio", "pageDescription": "Tecnologías de este portfolio: React, Chakra UI, i18next, Vite. Jorge Ángel Páez." }
+  },
   "projects": {
     "title": "Proyectos",
+    "generalPractices": "Prácticas generales",
     "visit": "Visitar",
     "repository": "Repositorio",
+    "repositoryFrontend": "Repositorio Frontend",
+    "repositoryBackend": "Repositorio Backend",
     "code": "Código",
+    "backend": "Backend",
     "video": "Video",
     "dates": {
       "febrero": "Febrero",
+      "feb": "Feb",
       "marzo": "Marzo",
       "julio": "Julio",
       "agosto": "Agosto",
       "diciembre": "Diciembre",
+      "dic": "Dic",
       "enero": "Enero",
+      "ene": "Ene",
       "abril": "Abril",
-      "mayo": "Mayo"
+      "mayo": "Mayo",
+      "nov": "Nov",
+      "jun": "Jun"
     },
     "status": {
       "inProgress": "En proceso"
+    },
+    "evaparti": {
+      "title": "Eva Parti - Prof. Eva Barrios",
+      "description": "Landing page para Profesora de Matemáticas con presupuestador de clases."
+    },
+    "leialab": {
+      "title": "LeiaLab",
+      "description": "Landing de agencia de automatización y desarrollo."
+    },
+    "gamehub": {
+      "title": "GameHub",
+      "description": "E-commerce de venta de insumos y equipos de informática. Proyecto tipo para alumnos del Bootcamp Full Stack de EducaciónIT."
+    },
+    "efimer-chat": {
+      "title": "Efimer Chat",
+      "description": "Chat anónimo y cifrado serverless (p2p), con creación de salas que se comparten mediante hash."
+    },
+    "freechat": {
+      "title": "FreeChat",
+      "description": "Sala de chat libre y anónima."
+    },
+    "api-argenta": {
+      "title": "API Argenta",
+      "description": "API y generador de datos mockup de personas de Argentina."
     },
     "portfolio": {
       "title": "Portfolio Personal (Nueva Versión)",

@@ -10,9 +10,9 @@ const ExperienceItem = ({ title, company, period, description, delay = 0 }) => {
   const textColor = useColorModeValue('light.subtext', 'dracula.comment')
 
   const cardHoverStyle = {
-    transform: 'translateY(-2px)',
-    boxShadow: useColorModeValue('lg', 'dark-lg'),
-    borderColor: useColorModeValue('light.accent', 'dracula.purple'),
+    transform: 'translateY(-1px)',
+    boxShadow: useColorModeValue('md', 'lg'),
+    borderColor: useColorModeValue('gray.300', 'dracula.currentLine'),
     transition: 'all 0.2s'
   }
 
@@ -122,10 +122,7 @@ const Experience = () => {
     description: currentLanguage === 'es' && item.descriptionEs ? item.descriptionEs : item.description
   })
 
-  const headingGradient = useColorModeValue(
-    'linear(to-r, light.accent, light.accentDark)',
-    'linear(to-r, dracula.purple, dracula.pink)'
-  )
+  const headingColor = useColorModeValue('light.text', 'dracula.foreground')
 
   return (
     <Container maxW="container.lg">
@@ -134,8 +131,8 @@ const Experience = () => {
           as="h2" 
           size="xl" 
           mb={6}
-          bgGradient={headingGradient}
-          bgClip="text"
+          color={headingColor}
+          fontWeight="600"
         >
           {t('navigation.experience')}
         </Heading>

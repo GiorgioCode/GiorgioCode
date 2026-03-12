@@ -31,35 +31,30 @@ const Navbar = () => {
     xl: false
   })
 
-  // Pre-compute all color mode values
-  const mobileButtonHoverBg = useColorModeValue('whiteAlpha.200', 'whiteAlpha.100')
-  const mobileButtonActiveBg = useColorModeValue('whiteAlpha.300', 'whiteAlpha.200')
-  const bgGradient = useColorModeValue(
-    'linear(to-r, blue.500, blue.600)',
-    'linear(to-r, dracula.bg, dracula.currentLine)'
-  )
-  const textBgGradient = useColorModeValue(
-    'linear(to-r, blue.600, blue.700)',
-    'linear(to-r, dracula.purple, dracula.pink)'
-  )
-  const linkHoverColor = useColorModeValue('blue.600', 'dracula.purple')
-  const linkActiveColor = useColorModeValue('blue.700', 'dracula.pink')
-  const textColor = useColorModeValue('white', 'dracula.foreground')
+  const mobileButtonHoverBg = useColorModeValue('blackAlpha.06', 'whiteAlpha.08')
+  const mobileButtonActiveBg = useColorModeValue('blackAlpha.10', 'whiteAlpha.12')
+  const navBg = useColorModeValue('white', 'dracula.bg')
+  const linkHoverColor = useColorModeValue('gray.700', 'gray.300')
+  const linkActiveColor = useColorModeValue('gray.800', 'white')
+  const textColor = useColorModeValue('gray.800', 'dracula.foreground')
   const drawerTextColor = useColorModeValue('gray.800', 'dracula.foreground')
-  const borderColor = useColorModeValue('blue.400', 'dracula.currentLine')
+  const borderColor = useColorModeValue('gray.200', 'dracula.currentLine')
 
   return (
     <Box 
       as="nav"
+      aria-label="Main navigation"
       position="fixed"
       top={0}
       left={0}
       right={0}
       height="64px"
       zIndex={10}
-      bgGradient={bgGradient} 
+      bg={navBg}
+      borderBottomWidth="1px"
+      borderColor={borderColor}
       px={4} 
-      boxShadow="md"
+      boxShadow="sm"
       transition="all 0.2s"
       display="flex"
       alignItems="center"
@@ -71,14 +66,12 @@ const Navbar = () => {
             to="/"
             color={textColor}
             fontSize="xl"
-            fontWeight="bold"
+            fontWeight="600"
             _hover={{ 
               textDecoration: 'none',
-              bgGradient: textBgGradient,
-              bgClip: 'text',
-              textShadow: '0 0 8px rgba(255,255,255,0.3)'
+              color: linkHoverColor
             }}
-            transition="all 0.2s"
+            transition="color 0.2s"
           >
             Jorge Angel Paez
           </Link>

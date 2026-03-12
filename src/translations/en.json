@@ -1,10 +1,17 @@
 {
   "home": {
-    "title": "Jorge Angel Paez",
-    "subtitle": "Software Developer | JavaScript & Python Instructor",
-    "description": "IT professional specialized in various roles and tools. In recent years, I have focused my development on Front End Development, complementing my independent professional activity with teaching JavaScript and Python. I combine technical skills with management and administration experience.",
+    "title": "Jorge Ángel Páez",
+    "subtitle": "Software Developer • Systems Architecture • AI & Embedded Systems",
+    "description": "Software developer focused on efficient systems, scalable backend architectures, and data-driven intelligent platforms. I work on the design and implementation of secure and scalable systems, with a focus on performance, reliability, and resource-constrained environments.",
+    "descriptionExtended": "I develop backend services using Go, Python, and Java, and build AI-assisted platforms leveraging vector databases and RAG architectures. In parallel, I design embedded and IoT solutions in C/C++, integrating hardware with distributed systems. My interests include implementing encryption layers, secure data transmission, and building robust architectures aligned with MIL-STD-810 standards.",
+    "currentWorkTitle": "Current work",
+    "currentWork": "Software development and systems engineering for Armada Argentina. Programming instructor at EducaciónIT. Research and experimentation in AI-assisted systems, vector databases and semantic search, efficient backend architectures, and cryptographic systems.",
+    "interestsTitle": "Research & engineering interests",
+    "interests": "RAG, vector databases and semantic search, context-aware information systems, cryptographic systems and secure authentication, efficient backend architectures for constrained environments, embedded systems and IoT, data indexing and knowledge retrieval.",
+    "techFocusTitle": "Stack & environments",
+    "techFocus": "Backend: Go, Python, Java, Node.js. Frontend: JavaScript, TypeScript, React, Angular. Databases: PostgreSQL, vector (Qdrant). Embedded: C/C++. Infrastructure: Linux, Docker, Git.",
     "location": "Buenos Aires, Argentina",
-    "contact": "+54 2932 440956 | jorgeangelpaez@gmail.com",
+    "contact": "jorgeangelpaez@gmail.com",
     "downloadCV": "Download CV",
     "emailCopied": "Email copied",
     "emailCopiedDesc": "Email has been copied to clipboard"
@@ -36,24 +43,70 @@
     "en": "English",
     "es": "Spanish"
   },
+  "a11y": {
+    "skipToContent": "Skip to main content"
+  },
+  "seo": {
+    "siteName": "Jorge Ángel Páez",
+    "home": { "pageTitle": "Home", "pageDescription": "Jorge Ángel Páez — Software developer: efficient systems, scalable backend (Go, Python, Java), AI platforms (RAG), embedded & IoT. Buenos Aires." },
+    "experience": { "pageTitle": "Experience", "pageDescription": "Jorge Ángel Páez work experience: EducaciónIT, frontend and backend development, systems management. Armada Argentina." },
+    "education": { "pageTitle": "Education", "pageDescription": "Academic background and certifications: Computer Science, MBA, Telecommunications, Scrum certifications." },
+    "skills": { "pageTitle": "Skills", "pageDescription": "Technical skills and languages: Go, Python, Java, React, databases, embedded systems, English." },
+    "projects": { "pageTitle": "Projects", "pageDescription": "Jorge Ángel Páez projects: portfolio, e-commerce, chatbots, APIs, web apps and educational repositories." },
+    "contact": { "pageTitle": "Contact", "pageDescription": "Contact Jorge Ángel Páez. Email and contact form. Buenos Aires, Argentina." },
+    "about": { "pageTitle": "About this site", "pageDescription": "Portfolio tech stack: React, Chakra UI, i18next, Vite. Jorge Ángel Páez." }
+  },
   "projects": {
     "title": "Projects",
+    "generalPractices": "General practices",
     "visit": "Visit",
     "repository": "Repository",
+    "repositoryFrontend": "Frontend Repository",
+    "repositoryBackend": "Backend Repository",
     "code": "Code",
+    "backend": "Backend",
     "video": "Video",
     "dates": {
       "febrero": "February",
+      "feb": "Feb",
       "marzo": "March",
       "julio": "July",
       "agosto": "August",
       "diciembre": "December",
+      "dic": "Dec",
       "enero": "January",
+      "ene": "Jan",
       "abril": "April",
-      "mayo": "May"
+      "mayo": "May",
+      "nov": "Nov",
+      "jun": "Jun"
     },
     "status": {
       "inProgress": "In Progress"
+    },
+    "evaparti": {
+      "title": "Eva Parti - Prof. Eva Barrios",
+      "description": "Landing page for Math teacher with class quote calculator."
+    },
+    "leialab": {
+      "title": "LeiaLab",
+      "description": "Landing page for automation and development agency."
+    },
+    "gamehub": {
+      "title": "GameHub",
+      "description": "E-commerce for IT supplies and equipment. Sample project for Full Stack Bootcamp students at EducaciónIT."
+    },
+    "efimer-chat": {
+      "title": "Efimer Chat",
+      "description": "Anonymous, encrypted serverless (p2p) chat with room creation shared via hash."
+    },
+    "freechat": {
+      "title": "FreeChat",
+      "description": "Free anonymous chat room."
+    },
+    "api-argenta": {
+      "title": "API Argenta",
+      "description": "API and mock data generator for Argentine personas."
     },
     "portfolio": {
       "title": "Personal Portfolio (New Version)",

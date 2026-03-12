@@ -12,9 +12,9 @@ const EducationItem = ({ title, institution, period, status, delay = 0 }) => {
   const subTextColor = useColorModeValue('light.subtext', 'dracula.comment')
 
   const cardHoverStyle = {
-    transform: 'translateY(-2px)',
-    boxShadow: useColorModeValue('lg', 'dark-lg'),
-    borderColor: useColorModeValue('light.accent', 'dracula.purple'),
+    transform: 'translateY(-1px)',
+    boxShadow: useColorModeValue('md', 'lg'),
+    borderColor: useColorModeValue('gray.300', 'dracula.currentLine'),
     transition: 'all 0.2s'
   }
 
@@ -143,11 +143,8 @@ const Education = () => {
             as="h2" 
             size="xl" 
             mb={6}
-            bgGradient={useColorModeValue(
-              'linear(to-r, light.accent, light.accentDark)',
-              'linear(to-r, dracula.purple, dracula.pink)'
-            )}
-            bgClip="text"
+            color={useColorModeValue('light.text', 'dracula.foreground')}
+            fontWeight="600"
           >
             {t('education.title')}
           </Heading>
@@ -171,11 +168,8 @@ const Education = () => {
             as="h2" 
             size="xl" 
             mb={6}
-            bgGradient={useColorModeValue(
-              'linear(to-r, light.accent, light.accentDark)',
-              'linear(to-r, dracula.purple, dracula.pink)'
-            )}
-            bgClip="text"
+            color={useColorModeValue('light.text', 'dracula.foreground')}
+            fontWeight="600"
           >
             {t('education.certifications')}
           </Heading>

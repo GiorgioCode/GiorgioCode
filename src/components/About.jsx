@@ -25,13 +25,12 @@ import { MdCheckCircle } from 'react-icons/md';
 export default function About() {
   const { t } = useTranslation();
   
-  // Dracula theme colors
-  const cardBg = useColorModeValue('white', '#282a36');
-  const cardHoverBg = useColorModeValue('gray.50', '#44475a');
-  const textColor = useColorModeValue('gray.800', '#f8f8f2');
-  const accentColor = useColorModeValue('blue.500', '#bd93f9');
-  const secondaryColor = useColorModeValue('blue.600', '#ff79c6');
-  const commentColor = useColorModeValue('gray.600', '#6272a4');
+  const cardBg = useColorModeValue('white', 'dracula.bg');
+  const cardHoverBg = useColorModeValue('gray.50', 'dracula.currentLine');
+  const textColor = useColorModeValue('gray.800', 'dracula.foreground');
+  const accentColor = useColorModeValue('gray.700', 'dracula.purple');
+  const secondaryColor = useColorModeValue('gray.600', 'dracula.pink');
+  const commentColor = useColorModeValue('gray.600', 'dracula.comment');
 
   const technologies = [
     {
@@ -109,11 +108,7 @@ export default function About() {
           <Heading
             as="h1"
             mb={4}
-            bgGradient={useColorModeValue(
-              'linear(to-r, blue.500, blue.600)',
-              'linear(to-r, #bd93f9, #ff79c6)'
-            )}
-            bgClip="text"
+            color={textColor}
             fontSize={{ base: '3xl', md: '4xl' }}
             fontWeight="bold"
           >
