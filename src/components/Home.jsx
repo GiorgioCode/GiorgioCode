@@ -14,7 +14,11 @@ import {
   SimpleGrid,
   Divider,
   Flex,
+  Grid,
+  List,
+  ListItem,
 } from '@chakra-ui/react'
+import { Link as RouterLink } from 'react-router-dom'
 import { FaLinkedin, FaGithub, FaEnvelope, FaMapMarkerAlt, FaFileDownload, FaBriefcase, FaLightbulb, FaCogs } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
@@ -26,7 +30,7 @@ const SectionCard = ({ children, delay = 0, ...props }) => (
     initial={{ opacity: 0, y: 20 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.4, delay }}
-    p={6}
+    p={{ base: 6, xl: 4 }}
     borderWidth="1px"
     borderRadius="xl"
     borderColor={useColorModeValue('gray.200', 'dracula.currentLine')}
@@ -69,198 +73,214 @@ const Home = () => {
     })
   }
 
+  const ctaBg = useColorModeValue('gray.800', 'dracula.purple')
+  const ctaHoverBg = useColorModeValue('gray.900', 'dracula.currentLine')
+
   return (
-    <Container maxW="container.lg" as="article" aria-label="Professional profile">
-      <VStack spacing={8} align="stretch" as="section">
-        {/* Hero: foto, nombre, subtítulo */}
-        <MotionBox
-          as="section"
-          aria-label="Profile headline"
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          textAlign="center"
-          py={6}
+    <Container maxW="1800px" px={{ base: 4, xl: 6 }} as="article" aria-label="Professional profile">
+      <VStack spacing={{ base: 8, xl: 4 }} align="stretch" as="section">
+        {/* Fila 1 (xl): Hero compacto + Descripción — misma altura, contenido alineado */}
+        <Grid
+          templateColumns={{ base: '1fr', xl: 'auto 1fr' }}
+          gap={{ base: 0, xl: 6 }}
+          alignItems="stretch"
+          minHeight={{ xl: 0 }}
         >
-          <Box mb={6} display="flex" justifyContent="center">
-            <Image
-              src="/images/portfolio.png"
-              alt={t('home.title')}
-              borderRadius="full"
-              boxSize={{ base: '160px', md: '200px' }}
-              objectFit="cover"
-              border="4px solid"
-              borderColor={borderColor}
-              boxShadow="md"
-              transition="all 0.2s ease"
-              _hover={{
-                transform: 'scale(1.02)',
-                borderColor: useColorModeValue('gray.400', 'dracula.purple'),
-              }}
-            />
-          </Box>
-          <Heading as="h1" size="2xl" mb={3} color={headingColor} fontWeight="600">
-            {t('home.title')}
-          </Heading>
-          <Text fontSize={{ base: 'lg', md: 'xl' }} color={subTextColor} fontWeight="medium">
-            {t('home.subtitle')}
-          </Text>
-        </MotionBox>
+          <MotionBox
+            as="section"
+            aria-label="Profile headline"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            textAlign="center"
+            py={{ base: 6, xl: 0 }}
+            display={{ base: 'block', xl: 'flex' }}
+            flexDirection={{ xl: 'column' }}
+            alignItems={{ xl: 'center' }}
+            justifyContent={{ xl: 'center' }}
+            minH={{ xl: '140px' }}
+          >
+            <Flex direction="column" align="center" gap={4} w="100%">
+              <Image
+                src="/images/portfolio.png"
+                alt={t('home.title')}
+                borderRadius="full"
+                boxSize={{ base: '160px', md: '140px', xl: '120px' }}
+                objectFit="cover"
+                border="3px solid"
+                borderColor={borderColor}
+                boxShadow="md"
+                flexShrink={0}
+                _hover={{
+                  borderColor: useColorModeValue('gray.400', 'dracula.purple'),
+                }}
+              />
+              <Box>
+                <Heading as="h1" size={{ base: '2xl', xl: 'xl' }} mb={2} color={headingColor} fontWeight="600">
+                  {t('home.title')}
+                </Heading>
+                <Text fontSize={{ base: 'lg', md: 'xl', xl: 'md' }} color={subTextColor} fontWeight="medium" lineHeight="tight">
+                  {t('home.subtitle')}
+                </Text>
+              </Box>
+            </Flex>
+          </MotionBox>
+          <SectionCard delay={0.1} display={{ xl: 'flex' }} flexDirection={{ xl: 'column' }} justifyContent={{ xl: 'center' }} minH={{ xl: '140px' }}>
+            <Text fontSize="lg" lineHeight="tall" color={textColor} mb={{ base: 4, xl: 2 }}>
+              {t('home.description')}
+            </Text>
+            <Text fontSize="lg" lineHeight="tall" color={subTextColor}>
+              {t('home.descriptionExtended')}
+            </Text>
+          </SectionCard>
+        </Grid>
 
-        {/* Descripción principal */}
-        <SectionCard delay={0.1}>
-          <Text fontSize="md" lineHeight="tall" color={textColor} mb={4}>
-            {t('home.description')}
-          </Text>
-          <Text fontSize="md" lineHeight="tall" color={subTextColor}>
-            {t('home.descriptionExtended')}
-          </Text>
-        </SectionCard>
-
-        {/* Trabajo actual + Intereses (grid en desktop) */}
-        <SimpleGrid columns={{ base: 1, md: 2 }} spacing={4}>
+        {/* Fila 2: Trabajo actual + Intereses + Stack (3 columnas en xl) */}
+        <SimpleGrid columns={{ base: 1, md: 2, xl: 3 }} spacing={4}>
           <SectionCard delay={0.2}>
-            <Flex align="center" gap={2} mb={3}>
+            <Flex align="center" gap={2} mb={{ base: 3, xl: 2 }}>
               <Icon as={FaBriefcase} color={iconColor} boxSize={5} />
-              <Heading as="h2" size="sm" color={sectionHeadingColor}>
+              <Heading as="h2" size="md" color={sectionHeadingColor}>
                 {t('home.currentWorkTitle')}
               </Heading>
             </Flex>
-            <Text fontSize="sm" lineHeight="tall" color={textColor}>
-              {t('home.currentWork')}
-            </Text>
+            <List as="ul" spacing={2} fontSize="lg" lineHeight="tall" color={textColor} listStyleType="disc" listStylePos="inside">
+              {t('home.currentWorkItems', { returnObjects: true }).map((item, idx) => (
+                <ListItem key={`current-work-${idx}`}>{item}</ListItem>
+              ))}
+            </List>
           </SectionCard>
           <SectionCard delay={0.25}>
-            <Flex align="center" gap={2} mb={3}>
+            <Flex align="center" gap={2} mb={{ base: 3, xl: 2 }}>
               <Icon as={FaLightbulb} color={iconColor} boxSize={5} />
-              <Heading as="h2" size="sm" color={sectionHeadingColor}>
+              <Heading as="h2" size="md" color={sectionHeadingColor}>
                 {t('home.interestsTitle')}
               </Heading>
             </Flex>
-            <Text fontSize="sm" lineHeight="tall" color={textColor}>
-              {t('home.interests')}
-            </Text>
+            <List as="ul" spacing={2} fontSize="lg" lineHeight="tall" color={textColor} listStyleType="disc" listStylePos="inside">
+              {t('home.interestsItems', { returnObjects: true }).map((item, idx) => (
+                <ListItem key={`interest-${idx}`}>{item}</ListItem>
+              ))}
+            </List>
+          </SectionCard>
+          <SectionCard delay={0.3}>
+            <Flex align="center" gap={2} mb={{ base: 3, xl: 2 }}>
+              <Icon as={FaCogs} color={iconColor} boxSize={5} />
+              <Heading as="h2" size="md" color={sectionHeadingColor}>
+                {t('home.techFocusTitle')}
+              </Heading>
+            </Flex>
+            <List as="ul" spacing={2} fontSize="lg" lineHeight="tall" color={textColor} listStyleType="disc" listStylePos="inside">
+              <ListItem>{t('home.techFocusBackend')}</ListItem>
+              <ListItem>{t('home.techFocusFrontend')}</ListItem>
+              <ListItem>{t('home.techFocusDatabases')}</ListItem>
+              <ListItem>{t('home.techFocusEmbedded')}</ListItem>
+              <ListItem>{t('home.techFocusInfra')}</ListItem>
+            </List>
           </SectionCard>
         </SimpleGrid>
 
-        {/* Stack y entornos */}
-        <SectionCard delay={0.3}>
-          <Flex align="center" gap={2} mb={3}>
-            <Icon as={FaCogs} color={iconColor} boxSize={5} />
-            <Heading as="h2" size="sm" color={sectionHeadingColor}>
-              {t('home.techFocusTitle')}
-            </Heading>
-          </Flex>
-          <Text fontSize="sm" lineHeight="tall" color={textColor}>
-            {t('home.techFocus')}
-          </Text>
-        </SectionCard>
-
         <Divider borderColor={borderColor} />
 
-        {/* Contacto: solo ubicación + email (sin teléfono) */}
-        <MotionBox
-          as="section"
-          aria-label="Contact information"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.35 }}
-          p={6}
-          borderWidth="1px"
-          borderRadius="xl"
-          borderColor={borderColor}
-          bg={cardBg}
-          boxShadow="sm"
+        {/* Fila 3: Contacto + CTA + Redes y CV (todo en una línea en xl) */}
+        <Flex
+          direction={{ base: 'column', xl: 'row' }}
+          gap={{ base: 4, xl: 6 }}
+          align={{ base: 'stretch', xl: 'center' }}
+          wrap="wrap"
         >
-          <VStack align="stretch" spacing={4}>
-            <HStack spacing={4}>
-              <Icon as={FaMapMarkerAlt} color={iconColor} boxSize={5} flexShrink={0} aria-hidden />
-              <Text fontSize="md" color={textColor}>
-                {t('home.location')}
-              </Text>
+          <MotionBox
+            as="section"
+            aria-label="Contact information"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.35 }}
+            p={{ base: 6, xl: 4 }}
+            borderWidth="1px"
+            borderRadius="xl"
+            borderColor={borderColor}
+            bg={cardBg}
+            boxShadow="sm"
+            flex={{ base: '1 1 100%', xl: '1 1 auto' }}
+          >
+            <HStack spacing={6} flexWrap="wrap">
+              <HStack spacing={2}>
+                <Icon as={FaMapMarkerAlt} color={iconColor} boxSize={5} flexShrink={0} aria-hidden />
+                <Text fontSize="lg" color={textColor}>
+                  {t('home.location')}
+                </Text>
+              </HStack>
+              <HStack spacing={2}>
+                <Icon as={FaEnvelope} color={iconColor} boxSize={5} flexShrink={0} />
+                <Link
+                  href={`mailto:${t('home.contact')}`}
+                  color={textColor}
+                  fontSize="lg"
+                  _hover={{ color: iconColor, textDecoration: 'none' }}
+                  onClick={(e) => {
+                    e.preventDefault()
+                    copyEmail()
+                  }}
+                  title={t('home.emailCopiedDesc')}
+                >
+                  {t('home.contact')}
+                </Link>
+              </HStack>
             </HStack>
-            <HStack spacing={4}>
-              <Icon as={FaEnvelope} color={iconColor} boxSize={5} flexShrink={0} />
-              <Link
-                href={`mailto:${t('home.contact')}`}
-                color={textColor}
-                _hover={{
-                  color: iconColor,
-                  textDecoration: 'none',
-                }}
-                onClick={(e) => {
-                  e.preventDefault()
-                  copyEmail()
-                }}
-                title={t('home.emailCopiedDesc')}
-              >
-                <Text fontSize="md">{t('home.contact')}</Text>
-              </Link>
-            </HStack>
-          </VStack>
-        </MotionBox>
+          </MotionBox>
 
-        {/* Redes y CV */}
-        <MotionBox
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.4 }}
-        >
-          <VStack spacing={6} align="center" pt={2}>
-            <HStack spacing={6} justify="center" flexWrap="wrap">
-              <Link href="https://linkedin.com/in/jorge-angel-paez" isExternal>
-                <Button
-                  leftIcon={<FaLinkedin />}
-                  colorScheme="linkedin"
-                  variant="ghost"
-                  size="lg"
-                  _hover={{
-                    bg: useColorModeValue('gray.100', 'dracula.currentLine'),
-                    transform: 'translateY(-2px)',
-                    shadow: 'md',
-                  }}
-                  transition="all 0.2s"
-                >
-                  LinkedIn
-                </Button>
-              </Link>
-              <Link href="https://github.com/GiorgioCode" isExternal>
-                <Button
-                  leftIcon={<FaGithub />}
-                  colorScheme="blue"
-                  variant="ghost"
-                  size="lg"
-                  _hover={{
-                    bg: useColorModeValue('gray.100', 'dracula.currentLine'),
-                    transform: 'translateY(-2px)',
-                    shadow: 'md',
-                  }}
-                  transition="all 0.2s"
-                >
-                  GitHub
-                </Button>
-              </Link>
-            </HStack>
+          <HStack spacing={3} flexWrap="wrap" justify={{ base: 'center', xl: 'flex-start' }}>
+            <Link as={RouterLink} to="/contact" _hover={{ textDecoration: 'none' }}>
+              <Button
+                size="lg"
+                bg={ctaBg}
+                color="white"
+                _hover={{ bg: ctaHoverBg, transform: 'translateY(-1px)', shadow: 'md' }}
+                _active={{ transform: 'translateY(0)' }}
+                transition="all 0.2s"
+              >
+                {t('navigation.contact')}
+              </Button>
+            </Link>
+            <Link href="https://linkedin.com/in/jorge-angel-paez" isExternal>
+              <Button
+                leftIcon={<FaLinkedin />}
+                colorScheme="linkedin"
+                variant="ghost"
+                size="md"
+                _hover={{ bg: useColorModeValue('gray.100', 'dracula.currentLine'), transform: 'translateY(-2px)', shadow: 'md' }}
+                transition="all 0.2s"
+              >
+                LinkedIn
+              </Button>
+            </Link>
+            <Link href="https://github.com/GiorgioCode" isExternal>
+              <Button
+                leftIcon={<FaGithub />}
+                colorScheme="blue"
+                variant="ghost"
+                size="md"
+                _hover={{ bg: useColorModeValue('gray.100', 'dracula.currentLine'), transform: 'translateY(-2px)', shadow: 'md' }}
+                transition="all 0.2s"
+              >
+                GitHub
+              </Button>
+            </Link>
             <Link href={`/cv/jorge_paez_resume_${i18n.language}.pdf`} download>
               <Button
                 leftIcon={<FaFileDownload />}
-                variant="solid"
-                size="lg"
-                bg={useColorModeValue('gray.700', 'gray.600')}
-                color="white"
-                _hover={{
-                  transform: 'translateY(-1px)',
-                  shadow: 'md',
-                  bg: useColorModeValue('gray.800', 'gray.500'),
-                }}
-                _active={{ transform: 'translateY(0)' }}
+                variant="outline"
+                size="md"
+                borderColor={borderColor}
+                color={textColor}
+                _hover={{ bg: useColorModeValue('gray.100', 'dracula.currentLine'), transform: 'translateY(-1px)', shadow: 'md' }}
                 transition="all 0.2s"
               >
                 {t('home.downloadCV')}
               </Button>
             </Link>
-          </VStack>
-        </MotionBox>
+          </HStack>
+        </Flex>
       </VStack>
     </Container>
   )

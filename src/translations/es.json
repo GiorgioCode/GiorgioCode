@@ -5,16 +5,33 @@
     "description": "Desarrollador de software enfocado en sistemas eficientes, arquitecturas backend escalables y plataformas inteligentes basadas en datos. Trabajo en el diseño e implementación de sistemas seguros y escalables, con foco en rendimiento, confiabilidad y entornos con restricciones de recursos.",
     "descriptionExtended": "Desarrollo servicios backend con Go, Python y Java, y trabajo en plataformas asistidas por IA con bases de datos vectoriales y RAG. En paralelo desarrollo soluciones embebidas e IoT con C/C++, integrando hardware con sistemas distribuidos. Me interesa el desarrollo de soluciones que implementen capas de cifrado y transmisión de datos seguros, así como también la implementación de arquitecturas robustas según normas MIL-STD-810.",
     "currentWorkTitle": "Trabajo actual",
-    "currentWork": "Desarrollo de software e ingeniería de sistemas para Armada Argentina. Instructor de programación en EducaciónIT. Investigación y experimentación en sistemas asistidos por IA, bases de datos vectoriales y búsqueda semántica, arquitecturas backend eficientes y sistemas criptográficos.",
+    "currentWork": "",
     "interestsTitle": "Intereses en investigación e ingeniería",
-    "interests": "RAG, bases de datos vectoriales y búsqueda semántica, sistemas de información con contexto, criptografía y autenticación segura, arquitecturas backend para entornos con restricciones, sistemas embebidos e IoT, indexación de datos y recuperación de conocimiento.",
+    "interests": "",
     "techFocusTitle": "Stack y entornos",
-    "techFocus": "Backend: Go, Python, Java, Node.js. Frontend: JavaScript, TypeScript, React, Angular. Bases de datos: PostgreSQL, vectoriales (Qdrant). Embebidos: C/C++. Infraestructura: Linux, Docker, Git.",
+    "techFocusBackend": "Backend: Go, Python, Java, Node.js",
+    "techFocusFrontend": "Frontend: JavaScript, TypeScript, React, Angular",
+    "techFocusDatabases": "Bases de datos: PostgreSQL, vectoriales (Qdrant)",
+    "techFocusEmbedded": "Embebidos: C/C++",
+    "techFocusInfra": "Infraestructura: Linux, Docker, Git",
     "location": "Buenos Aires, Argentina",
     "contact": "jorgeangelpaez@gmail.com",
     "downloadCV": "Descargar CV",
     "emailCopied": "Email copiado",
-    "emailCopiedDesc": "El email ha sido copiado al portapapeles"
+    "emailCopiedDesc": "El email ha sido copiado al portapapeles",
+    "currentWorkItems": [
+      "Desarrollo de software e ingeniería de sistemas para Armada Argentina",
+      "Instructor de programación en EducaciónIT",
+      "Investigación y experimentación en sistemas asistidos por IA, bases de datos vectoriales y búsqueda semántica, arquitecturas backend eficientes y sistemas criptográficos"
+    ],
+    "interestsItems": [
+      "RAG y bases de datos vectoriales",
+      "Búsqueda semántica y sistemas de información con contexto",
+      "Criptografía y autenticación segura",
+      "Arquitecturas backend para entornos con restricciones",
+      "Sistemas embebidos e IoT",
+      "Indexación de datos y recuperación de conocimiento"
+    ]
   },
   "navigation": {
     "menu": "Menú",
@@ -48,13 +65,34 @@
   },
   "seo": {
     "siteName": "Jorge Ángel Páez",
-    "home": { "pageTitle": "Inicio", "pageDescription": "Jorge Ángel Páez — Desarrollador de software: sistemas eficientes, backend escalable (Go, Python, Java), plataformas con IA (RAG), embebidos e IoT. Buenos Aires." },
-    "experience": { "pageTitle": "Experiencia", "pageDescription": "Experiencia laboral de Jorge Ángel Páez: EducaciónIT, desarrollo frontend y backend, gestión de sistemas. Armada Argentina." },
-    "education": { "pageTitle": "Formación", "pageDescription": "Formación académica y certificaciones: Licenciatura en Informática, MBA, Especialista en Telecomunicaciones, certificaciones Scrum." },
-    "skills": { "pageTitle": "Habilidades", "pageDescription": "Habilidades técnicas e idiomas: Go, Python, Java, React, bases de datos, sistemas embebidos, inglés." },
-    "projects": { "pageTitle": "Proyectos", "pageDescription": "Proyectos de Jorge Ángel Páez: portfolio, e-commerce, chatbots, APIs, aplicaciones web y repositorios educativos." },
-    "contact": { "pageTitle": "Contacto", "pageDescription": "Contactar a Jorge Ángel Páez. Email y formulario de contacto. Buenos Aires, Argentina." },
-    "about": { "pageTitle": "Acerca del sitio", "pageDescription": "Tecnologías de este portfolio: React, Chakra UI, i18next, Vite. Jorge Ángel Páez." }
+    "home": {
+      "pageTitle": "Inicio",
+      "pageDescription": "Jorge Ángel Páez — Desarrollador de software: sistemas eficientes, backend escalable (Go, Python, Java), plataformas con IA (RAG), embebidos e IoT. Buenos Aires."
+    },
+    "experience": {
+      "pageTitle": "Experiencia",
+      "pageDescription": "Experiencia laboral de Jorge Ángel Páez: EducaciónIT, desarrollo frontend y backend, gestión de sistemas. Armada Argentina."
+    },
+    "education": {
+      "pageTitle": "Formación",
+      "pageDescription": "Formación académica y certificaciones: Licenciatura en Informática, MBA, Especialista en Telecomunicaciones, certificaciones Scrum."
+    },
+    "skills": {
+      "pageTitle": "Habilidades",
+      "pageDescription": "Habilidades técnicas e idiomas: Go, Python, Java, React, bases de datos, sistemas embebidos, inglés."
+    },
+    "projects": {
+      "pageTitle": "Proyectos",
+      "pageDescription": "Proyectos de Jorge Ángel Páez: portfolio, e-commerce, chatbots, APIs, aplicaciones web y repositorios educativos."
+    },
+    "contact": {
+      "pageTitle": "Contacto",
+      "pageDescription": "Contactar a Jorge Ángel Páez. Email y formulario de contacto. Buenos Aires, Argentina."
+    },
+    "about": {
+      "pageTitle": "Acerca del sitio",
+      "pageDescription": "Tecnologías de este portfolio: React, Chakra UI, i18next, Vite. Jorge Ángel Páez."
+    }
   },
   "projects": {
     "title": "Proyectos",
@@ -240,7 +278,6 @@
       "collaboration": "Colaboración en equipo",
       "hosting": "Alojamiento web"
     },
-
     "footer": {
       "text": "Explora el código fuente completo en"
     }

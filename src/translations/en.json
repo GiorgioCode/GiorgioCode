@@ -5,16 +5,33 @@
     "description": "Software developer focused on efficient systems, scalable backend architectures, and data-driven intelligent platforms. I work on the design and implementation of secure and scalable systems, with a focus on performance, reliability, and resource-constrained environments.",
     "descriptionExtended": "I develop backend services using Go, Python, and Java, and build AI-assisted platforms leveraging vector databases and RAG architectures. In parallel, I design embedded and IoT solutions in C/C++, integrating hardware with distributed systems. My interests include implementing encryption layers, secure data transmission, and building robust architectures aligned with MIL-STD-810 standards.",
     "currentWorkTitle": "Current work",
-    "currentWork": "Software development and systems engineering for Armada Argentina. Programming instructor at EducaciónIT. Research and experimentation in AI-assisted systems, vector databases and semantic search, efficient backend architectures, and cryptographic systems.",
+    "currentWork": "",
     "interestsTitle": "Research & engineering interests",
-    "interests": "RAG, vector databases and semantic search, context-aware information systems, cryptographic systems and secure authentication, efficient backend architectures for constrained environments, embedded systems and IoT, data indexing and knowledge retrieval.",
+    "interests": "",
     "techFocusTitle": "Stack & environments",
-    "techFocus": "Backend: Go, Python, Java, Node.js. Frontend: JavaScript, TypeScript, React, Angular. Databases: PostgreSQL, vector (Qdrant). Embedded: C/C++. Infrastructure: Linux, Docker, Git.",
+    "techFocusBackend": "Backend: Go, Python, Java, Node.js",
+    "techFocusFrontend": "Frontend: JavaScript, TypeScript, React, Angular",
+    "techFocusDatabases": "Databases: PostgreSQL, vector (Qdrant)",
+    "techFocusEmbedded": "Embedded: C/C++",
+    "techFocusInfra": "Infrastructure: Linux, Docker, Git",
     "location": "Buenos Aires, Argentina",
     "contact": "jorgeangelpaez@gmail.com",
     "downloadCV": "Download CV",
     "emailCopied": "Email copied",
-    "emailCopiedDesc": "Email has been copied to clipboard"
+    "emailCopiedDesc": "Email has been copied to clipboard",
+    "currentWorkItems": [
+      "Software development and systems engineering for Armada Argentina",
+      "Programming instructor at EducaciónIT",
+      "Research and experimentation in AI-assisted systems, vector databases and semantic search, efficient backend architectures, and cryptographic systems"
+    ],
+    "interestsItems": [
+      "RAG and vector databases",
+      "Semantic search and context-aware information systems",
+      "Cryptographic systems and secure authentication",
+      "Efficient backend architectures for constrained environments",
+      "Embedded systems and IoT",
+      "Data indexing and knowledge retrieval"
+    ]
   },
   "navigation": {
     "menu": "Menu",
@@ -48,13 +65,34 @@
   },
   "seo": {
     "siteName": "Jorge Ángel Páez",
-    "home": { "pageTitle": "Home", "pageDescription": "Jorge Ángel Páez — Software developer: efficient systems, scalable backend (Go, Python, Java), AI platforms (RAG), embedded & IoT. Buenos Aires." },
-    "experience": { "pageTitle": "Experience", "pageDescription": "Jorge Ángel Páez work experience: EducaciónIT, frontend and backend development, systems management. Armada Argentina." },
-    "education": { "pageTitle": "Education", "pageDescription": "Academic background and certifications: Computer Science, MBA, Telecommunications, Scrum certifications." },
-    "skills": { "pageTitle": "Skills", "pageDescription": "Technical skills and languages: Go, Python, Java, React, databases, embedded systems, English." },
-    "projects": { "pageTitle": "Projects", "pageDescription": "Jorge Ángel Páez projects: portfolio, e-commerce, chatbots, APIs, web apps and educational repositories." },
-    "contact": { "pageTitle": "Contact", "pageDescription": "Contact Jorge Ángel Páez. Email and contact form. Buenos Aires, Argentina." },
-    "about": { "pageTitle": "About this site", "pageDescription": "Portfolio tech stack: React, Chakra UI, i18next, Vite. Jorge Ángel Páez." }
+    "home": {
+      "pageTitle": "Home",
+      "pageDescription": "Jorge Ángel Páez — Software developer: efficient systems, scalable backend (Go, Python, Java), AI platforms (RAG), embedded & IoT. Buenos Aires."
+    },
+    "experience": {
+      "pageTitle": "Experience",
+      "pageDescription": "Jorge Ángel Páez work experience: EducaciónIT, frontend and backend development, systems management. Armada Argentina."
+    },
+    "education": {
+      "pageTitle": "Education",
+      "pageDescription": "Academic background and certifications: Computer Science, MBA, Telecommunications, Scrum certifications."
+    },
+    "skills": {
+      "pageTitle": "Skills",
+      "pageDescription": "Technical skills and languages: Go, Python, Java, React, databases, embedded systems, English."
+    },
+    "projects": {
+      "pageTitle": "Projects",
+      "pageDescription": "Jorge Ángel Páez projects: portfolio, e-commerce, chatbots, APIs, web apps and educational repositories."
+    },
+    "contact": {
+      "pageTitle": "Contact",
+      "pageDescription": "Contact Jorge Ángel Páez. Email and contact form. Buenos Aires, Argentina."
+    },
+    "about": {
+      "pageTitle": "About this site",
+      "pageDescription": "Portfolio tech stack: React, Chakra UI, i18next, Vite. Jorge Ángel Páez."
+    }
   },
   "projects": {
     "title": "Projects",
@@ -240,7 +278,6 @@
       "collaboration": "Team collaboration",
       "hosting": "Web hosting"
     },
-
     "footer": {
       "text": "Explore the complete source code on"
     }

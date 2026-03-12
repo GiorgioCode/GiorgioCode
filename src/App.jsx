@@ -60,10 +60,10 @@ const AppContent = () => {
       <Container 
         as="main"
         id="main-content"
-        maxW="container.xl" 
+        maxW="1800px"
         mt="64px"
         py={8}
-        px={{ base: 4, md: 8 }}
+        px={{ base: 4, md: 8, xl: 10 }}
         position="relative"
         zIndex={1}
         tabIndex={-1}

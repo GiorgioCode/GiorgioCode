@@ -17,13 +17,14 @@ import {
   VStack,
   useBreakpointValue
 } from '@chakra-ui/react'
-import { Link as RouterLink } from 'react-router-dom'
+import { Link as RouterLink, useLocation } from 'react-router-dom'
 import { FaSun, FaMoon, FaBars } from 'react-icons/fa'
 import { useTranslation } from 'react-i18next'
 import LanguageSelector from './LanguageSelector'
 
 const Navbar = () => {
   const { t } = useTranslation()
+  const { pathname } = useLocation()
   const { colorMode, toggleColorMode } = useColorMode()
   const { isOpen, onOpen, onClose } = useDisclosure()
   const isMobile = useBreakpointValue({
@@ -61,20 +62,22 @@ const Navbar = () => {
     >
       <Flex w="100%" alignItems="center" justifyContent="space-between">
         <Box>
-          <Link
-            as={RouterLink}
-            to="/"
-            color={textColor}
-            fontSize="xl"
-            fontWeight="600"
-            _hover={{ 
-              textDecoration: 'none',
-              color: linkHoverColor
-            }}
-            transition="color 0.2s"
-          >
-            Jorge Angel Paez
-          </Link>
+          {pathname !== '/' && (
+            <Link
+              as={RouterLink}
+              to="/"
+              color={textColor}
+              fontSize="xl"
+              fontWeight="600"
+              _hover={{
+                textDecoration: 'none',
+                color: linkHoverColor
+              }}
+              transition="color 0.2s"
+            >
+              Jorge Angel Paez
+            </Link>
+          )}
         </Box>
 
         {isMobile ? (
