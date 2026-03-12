@@ -35,7 +35,7 @@ export default [
   },
   {
     id: 'freechat', // Freechat - Sala de chat libre y anonima.
-    image: '/images/projects/leialab.png',
+    image: '/images/projects/freechat.png',
     liveUrl: 'https://freechat-anon.vercel.app/',
     repoUrl: 'https://github.com/GiorgioCode/free-chat-frontend',
     repoUrlBackend: 'https://github.com/GiorgioCode/free-chat-backend',
