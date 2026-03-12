@@ -241,7 +241,7 @@ const Home = () => {
                 </Button>
               </Link>
             </HStack>
-            <Link href={`/cv/CV-PAEZ-${i18n.language.toUpperCase()}.pdf`} download>
+            <Link href={`/cv/jorge_paez_resume_${i18n.language}.pdf`} download>
               <Button
                 leftIcon={<FaFileDownload />}
                 variant="solid"
