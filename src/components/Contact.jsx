@@ -17,7 +17,7 @@ import { useTranslation } from 'react-i18next';
 import emailjs from '@emailjs/browser';
 import { EMAILJS_CONFIG } from '../config/emailjs';
 
-const MotionBox = motion(Box);
+const MotionBox = motion.create(Box);
 
 const Contact = () => {
   const { t } = useTranslation();

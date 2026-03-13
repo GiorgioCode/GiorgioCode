@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <style>
+    text { font-family: Arial, sans-serif; font-size: 14px; fill: #4b5563; }
+    line, path, circle { stroke: #4b5563; }
+  </style>
+  <text x="320" y="30" text-anchor="middle">Trade offs de rendimiento con cifrado homomorfico</text>
+
+  <line x1="100" y1="300" x2="560" y2="300" stroke="#4b5563" stroke-width="1.5"/>
+  <line x1="100" y1="300" x2="100" y2="80" stroke="#4b5563" stroke-width="1.5"/>
+
+  <text x="330" y="330" text-anchor="middle">Privacidad</text>
+  <text x="65" y="190" text-anchor="middle" transform="rotate(-90 65 190)">Latencia / coste</text>
+
+  <circle cx="160" cy="120" r="5" fill="#4b5563" stroke="none"/>
+  <text x="185" y="124">Datos en claro</text>
+
+  <circle cx="280" cy="170" r="5" fill="#4b5563" stroke="none"/>
+  <text x="305" y="174">Cifrado clasico</text>
+
+  <circle cx="400" cy="230" r="5" fill="#4b5563" stroke="none"/>
+  <text x="425" y="234">HE parcial</text>
+
+  <circle cx="500" cy="265" r="5" fill="#4b5563" stroke="none"/>
+  <text x="525" y="269">HE completo</text>
+
+  <path d="M160,120 L280,170 L400,230 L500,265" fill="none" stroke="#4b5563" stroke-width="2"/>
+</svg>

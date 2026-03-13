@@ -13,7 +13,7 @@ i18n
     lng: 'es',
     fallbackLng: 'es',
     interpolation: { escapeValue: false },
-    debug: process.env.NODE_ENV === 'development',
+    debug: false,
     keySeparator: '.',
     detection: {
       order: ['localStorage', 'navigator'],

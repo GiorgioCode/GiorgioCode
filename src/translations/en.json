@@ -41,7 +41,8 @@
     "skills": "Skills",
     "projects": "Projects",
     "contact": "Contact",
-    "about": "About"
+    "about": "About",
+    "blog": "Blog"
   },
   "education": {
     "title": "Academic Background",
@@ -92,7 +93,24 @@
     "about": {
       "pageTitle": "About this site",
       "pageDescription": "Portfolio tech stack: React, Chakra UI, i18next, Vite. Jorge Ángel Páez."
+    },
+    "blog": {
+      "pageTitle": "Blog",
+      "pageDescription": "Articles and technical studies written by Jorge Ángel Páez."
     }
+  },
+  "blog": {
+    "title": "Blog",
+    "noPosts": "No posts available.",
+    "readMore": "Read more",
+    "backToBlog": "Back to blog",
+    "postNotFound": "Post not found.",
+    "noContent": "No content for this post.",
+    "author": "Author",
+    "date": "Date",
+    "share": "Share",
+    "linkCopied": "Link copied",
+    "copyError": "Could not copy link"
   },
   "projects": {
     "title": "Projects",

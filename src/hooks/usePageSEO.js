@@ -10,6 +10,7 @@ const ROUTE_TO_SEO_KEY = {
   '/projects': 'projects',
   '/contact': 'contact',
   '/about': 'about',
+  '/blog': 'blog',
 }
 
 /**

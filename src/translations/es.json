@@ -41,7 +41,8 @@
     "skills": "Habilidades",
     "projects": "Proyectos",
     "contact": "Contacto",
-    "about": "Acerca de"
+    "about": "Acerca de",
+    "blog": "Blog"
   },
   "education": {
     "title": "Formación Académica",
@@ -92,7 +93,24 @@
     "about": {
       "pageTitle": "Acerca del sitio",
       "pageDescription": "Tecnologías de este portfolio: React, Chakra UI, i18next, Vite. Jorge Ángel Páez."
+    },
+    "blog": {
+      "pageTitle": "Blog",
+      "pageDescription": "Artículos y estudios técnicos de Jorge Ángel Páez."
     }
+  },
+  "blog": {
+    "title": "Blog",
+    "noPosts": "No hay publicaciones disponibles.",
+    "readMore": "Leer más",
+    "backToBlog": "Volver al blog",
+    "postNotFound": "Publicación no encontrada.",
+    "noContent": "No hay contenido para esta publicación.",
+    "author": "Autor",
+    "date": "Fecha",
+    "share": "Compartir",
+    "linkCopied": "Enlace copiado",
+    "copyError": "No se pudo copiar el enlace"
   },
   "projects": {
     "title": "Proyectos",

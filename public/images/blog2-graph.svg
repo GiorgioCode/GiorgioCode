@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360">
+  <style>text{font-family:Arial,sans-serif;font-size:14px;fill:#4b5563;} rect,line,path{stroke:#4b5563;}</style>
+  <text x="300" y="30" text-anchor="middle">Arquitectura Graph-RAG</text>
+  <rect x="200" y="60" width="200" height="60" fill="none" stroke="#4b5563"/>
+  <text x="300" y="95" text-anchor="middle">Knowledge Graph</text>
+  <line x1="300" y1="120" x2="300" y2="150" stroke="#4b5563" marker-end="url(#arrow)"/>
+  <rect x="220" y="150" width="160" height="40" fill="none" stroke="#4b5563"/>
+  <text x="300" y="175" text-anchor="middle">Graph Retrieval</text>
+  <line x1="300" y1="190" x2="300" y2="220" stroke="#4b5563" marker-end="url(#arrow)"/>
+  <rect x="220" y="220" width="160" height="40" fill="none" stroke="#4b5563"/>
+  <text x="300" y="245" text-anchor="middle">LLM</text>
+  <line x1="300" y1="260" x2="300" y2="290" stroke="#4b5563" marker-end="url(#arrow)"/>
+  <text x="300" y="315" text-anchor="middle">Respuesta</text>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 z" fill="#4b5563" />
+    </marker>
+  </defs>
+</svg>

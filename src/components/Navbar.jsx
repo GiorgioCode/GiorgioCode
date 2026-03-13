@@ -145,6 +145,16 @@ const Navbar = () => {
             </Link>
             <Link
               as={RouterLink}
+              to="/blog"
+              color={textColor}
+              _hover={{ color: linkHoverColor }}
+              _active={{ color: linkActiveColor }}
+              transition="color 0.2s"
+            >
+              {t('navigation.blog')}
+            </Link>
+            <Link
+              as={RouterLink}
               to="/contact"
               color={textColor}
               _hover={{ color: linkHoverColor }}
@@ -242,6 +252,17 @@ const Navbar = () => {
                   onClick={onClose}
                 >
                   {t('navigation.projects')}
+                </Link>
+                <Link
+                  as={RouterLink}
+                  to="/blog"
+                  color={drawerTextColor}
+                  _hover={{ color: linkHoverColor }}
+                  _active={{ color: linkActiveColor }}
+                  transition="color 0.2s"
+                  onClick={onClose}
+                >
+                  {t('navigation.blog')}
                 </Link>
                 <Link
                   as={RouterLink}

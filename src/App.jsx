@@ -11,6 +11,8 @@ import PageTransition from './components/PageTransition'
 import ParticlesBackground from './components/ParticlesBackground'
 import Projects from './components/Projects'
 import About from './components/About'
+import Blog from './components/Blog'
+import BlogPost from './components/BlogPost'
 import { useTranslation } from 'react-i18next'
 import { usePageSEO } from './hooks/usePageSEO'
 
@@ -103,6 +105,16 @@ const AppContent = () => {
             <Route path="/about" element={
               <PageTransition key="about">
                 <About />
+              </PageTransition>
+            } />
+            <Route path="/blog" element={
+              <PageTransition key="blog">
+                <Blog />
+              </PageTransition>
+            } />
+            <Route path="/blog/:slug" element={
+              <PageTransition key="blogpost">
+                <BlogPost />
               </PageTransition>
             } />
             <Route path="*" element={<Navigate to="/" replace />} />

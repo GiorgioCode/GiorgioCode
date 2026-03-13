@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="360">
+  <style>text{font-family:Arial,sans-serif;font-size:14px;fill:#4b5563;} rect,line,path{stroke:#4b5563;}</style>
+  <text x="300" y="30" text-anchor="middle">Flujo general de un sistema RAG</text>
+  <rect x="50" y="50" width="500" height="40" fill="none" stroke="#4b5563"/>
+  <text x="300" y="75" text-anchor="middle">Usuario</text>
+  <line x1="300" y1="90" x2="300" y2="120" stroke="#4b5563" marker-end="url(#arrow)"/>
+  <rect x="150" y="120" width="300" height="40" fill="none" stroke="#4b5563"/>
+  <text x="300" y="145" text-anchor="middle">Embeddings</text>
+  <line x1="300" y1="160" x2="300" y2="190" stroke="#4b5563" marker-end="url(#arrow)"/>
+  <rect x="100" y="190" width="400" height="40" fill="none" stroke="#4b5563"/>
+  <text x="300" y="215" text-anchor="middle">Vector Database (Qdrant)</text>
+  <line x1="300" y1="230" x2="300" y2="260" stroke="#4b5563" marker-end="url(#arrow)"/>
+  <rect x="150" y="260" width="300" height="40" fill="none" stroke="#4b5563"/>
+  <text x="300" y="285" text-anchor="middle">Documentos relevantes</text>
+  <line x1="300" y1="300" x2="300" y2="330" stroke="#4b5563" marker-end="url(#arrow)"/>
+  <text x="300" y="350" text-anchor="middle">LLM</text>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L6,3 z" fill="#4b5563" />
+    </marker>
+  </defs>
+</svg>
