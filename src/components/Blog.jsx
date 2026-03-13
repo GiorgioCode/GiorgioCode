@@ -120,7 +120,7 @@ const Blog = () => {
   }
 
   return (
-    <Container maxW="1200px" px={0}>
+    <Container maxW="1600px" px={0}>
       <Heading as="h1" size="xl" mb={8} color={headingColor} fontWeight="600">
         {t('blog.title')}
       </Heading>
