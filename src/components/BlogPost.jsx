@@ -32,23 +32,33 @@ import { oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import { useColorMode } from '@chakra-ui/react'
 import ShareButtons from './ShareButtons'
 
-const postMeta = {
-  blog1: { author: 'Jorge Ángel Páez', date: '12/junio/2025', isoDate: '2025-06-12' },
-  blog2: { author: 'Jorge Ángel Páez', date: '10/diciembre/2025', isoDate: '2025-12-10' },
-  blog3: { author: 'Jorge Ángel Páez', date: '5/febrero/2026', isoDate: '2026-02-05' },
-  blog4: { author: 'Jorge Ángel Páez', date: '12/marzo/2026', isoDate: '2026-03-12' },
-  blog5: { author: 'Jorge Ángel Páez', date: '13/marzo/2026', isoDate: '2026-03-13' },
-}
-
 const postFiles = import.meta.glob('../../preblog/*.md', { query: '?raw', import: 'default' })
 
 const BlogPost = () => {
   const { slug } = useParams()
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const { colorMode } = useColorMode()
   const [content, setContent] = useState('')
   const [loading, setLoading] = useState(true)
-  const meta = postMeta[slug] || {}
+
+  const isoDate = slug
+  let formattedDate = ''
+  if (isoDate && /^\d{4}-\d{2}-\d{2}$/.test(isoDate)) {
+    const d = new Date(isoDate)
+    if (!Number.isNaN(d.getTime())) {
+      formattedDate = d.toLocaleDateString(i18n.language || 'es', {
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric',
+      })
+    }
+  }
+
+  const meta = {
+    author: 'Jorge Ángel Páez',
+    date: formattedDate,
+    isoDate,
+  }
 
   const borderColor = useColorModeValue('gray.200', 'dracula.currentLine')
   const cardBg = useColorModeValue('white', 'dracula.bg')

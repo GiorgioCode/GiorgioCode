@@ -20,14 +20,6 @@ const MotionBox = motion.create(Box)
 
 const postFiles = import.meta.glob('../../preblog/*.md', { query: '?raw', import: 'default' })
 
-const postMeta = {
-  blog1: { author: 'Jorge Ángel Páez', date: '12/junio/2025', isoDate: '2025-06-12' },
-  blog2: { author: 'Jorge Ángel Páez', date: '10/diciembre/2025', isoDate: '2025-12-10' },
-  blog3: { author: 'Jorge Ángel Páez', date: '5/febrero/2026', isoDate: '2026-02-05' },
-  blog4: { author: 'Jorge Ángel Páez', date: '12/marzo/2026', isoDate: '2026-03-12' },
-  blog5: { author: 'Jorge Ángel Páez', date: '13/marzo/2026', isoDate: '2026-03-13' },
-}
-
 const Blog = () => {
   const { t } = useTranslation()
   const [posts, setPosts] = useState([])
@@ -87,8 +79,20 @@ const Blog = () => {
               summary = firstPara.slice(0, 160)
               if (firstPara.length > 160) summary += '...'
             }
-            const meta = postMeta[slug] || {}
-            return { slug, title, summary, ...meta }
+            const isoDate = slug
+            let date = ''
+            if (/^\d{4}-\d{2}-\d{2}$/.test(isoDate)) {
+              const d = new Date(isoDate)
+              if (!Number.isNaN(d.getTime())) {
+                date = d.toLocaleDateString('es-ES', {
+                  day: 'numeric',
+                  month: 'long',
+                  year: 'numeric',
+                })
+              }
+            }
+            const author = 'Jorge Ángel Páez'
+            return { slug, title, summary, isoDate, date, author }
           })
         )
         arr.sort((a, b) => {
