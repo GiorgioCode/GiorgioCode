@@ -237,7 +237,7 @@ const BlogPost = () => {
   }
 
   return (
-    <Container maxW="900px" px={0}>
+    <Container maxW="1200px" px={0}>
       <Button
         mb={6}
         as={RouterLink}
