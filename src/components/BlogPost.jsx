@@ -21,7 +21,7 @@ import {
   Th,
   Td,
   Divider,
-  chakra,
+  Image,
   Container,
   Flex,
 } from '@chakra-ui/react'
@@ -70,6 +70,10 @@ const BlogPost = () => {
   const tableHeadBg = useColorModeValue('gray.100', 'dracula.currentLine')
   const codeBg = useColorModeValue('gray.50', '#1e293b')
   const spinnerColor = useColorModeValue('gray.600', 'dracula.purple')
+  const svgBg = useColorModeValue('gray.50', '#111827')
+  const svgBorder = useColorModeValue('gray.200', 'whiteAlpha.200')
+  const svgText = useColorModeValue('#1f2937', '#f3f4f6')
+  const svgMutedText = useColorModeValue('#4b5563', '#cbd5e1')
 
   useEffect(() => {
     const key = `../../preblog/${slug}.md`
@@ -97,24 +101,79 @@ const BlogPost = () => {
   const syntaxStyle = colorMode === 'dark' ? oneDark : oneLight
 
   const mdComponents = {
-    h1: ({ node, ...props }) => <Heading as="h1" size="xl" mt={8} mb={4} color={textColor} {...props} />,
-    h2: ({ node, ...props }) => <Heading as="h2" size="lg" mt={6} mb={3} color={textColor} {...props} />,
-    h3: ({ node, ...props }) => <Heading as="h3" size="md" mt={5} mb={2} color={textColor} {...props} />,
-    p: ({ node, ...props }) => (
+    h1: ({ node: _node, ...props }) => <Heading as="h1" size="xl" mt={8} mb={4} color={textColor} {...props} />,
+    h2: ({ node: _node, ...props }) => <Heading as="h2" size="lg" mt={6} mb={3} color={textColor} {...props} />,
+    h3: ({ node: _node, ...props }) => <Heading as="h3" size="md" mt={5} mb={2} color={textColor} {...props} />,
+    p: ({ node: _node, ...props }) => (
       <Text mb={4} lineHeight="tall" fontSize="md" color={textColor} {...props} />
     ),
-    a: ({ node, ...props }) => (
+    a: ({ node: _node, ...props }) => (
       <Link color={linkColor} _hover={{ textDecoration: 'underline' }} isExternal={props.href?.startsWith('http')} {...props} />
     ),
-    ul: ({ node, ...props }) => <UnorderedList ml={6} mb={4} spacing={1} {...props} />,
-    ol: ({ node, ...props }) => <OrderedList ml={6} mb={4} spacing={1} {...props} />,
-    li: ({ node, ordered, index, checked, ...props }) => <ListItem color={textColor} {...props} />,
-    code: ({ node, className, children, inline, ...props }) => {
+    ul: ({ node: _node, ...props }) => <UnorderedList ml={6} mb={4} spacing={1} {...props} />,
+    ol: ({ node: _node, ...props }) => <OrderedList ml={6} mb={4} spacing={1} {...props} />,
+    li: ({ node: _node, ordered: _ordered, index: _index, checked: _checked, ...props }) => <ListItem color={textColor} {...props} />,
+    code: ({ node: _node, className, children, inline: _inline, ...props }) => {
       const text = String(children).replace(/\n$/, '').trim()
       const isInline = !className
+      const match = /language-(\w+)/.exec(className || '')
+      const lang = match ? match[1] : ''
+      const hasUnsafeSvgContent = /<script\b|on[a-z]+\s*=/i.test(text)
+      const isSvgBlock = lang === 'svg' && text.startsWith('<svg') && text.endsWith('</svg>') && !hasUnsafeSvgContent
+
+      if (isSvgBlock) {
+        return (
+          <Box
+            className="blog-svg-diagram"
+            my={6}
+            overflowX="auto"
+            borderWidth="1px"
+            borderColor={svgBorder}
+            borderRadius="md"
+            bg={svgBg}
+            p={{ base: 3, md: 4 }}
+            sx={{
+              '& svg': {
+                width: '100%',
+                maxWidth: '760px',
+                height: 'auto',
+                display: 'block',
+                margin: '0 auto',
+                overflow: 'visible',
+              },
+              '& .th': {
+                fontFamily: 'Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+                fontSize: '13px',
+                fontWeight: 700,
+                fill: svgText,
+              },
+              '& .ts': {
+                fontFamily: 'Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+                fontSize: '10.5px',
+                fill: svgMutedText,
+              },
+              '& .c-purple rect': { fill: 'rgba(127, 119, 221, 0.16)', stroke: '#7F77DD' },
+              '& .c-purple text': { fill: svgText },
+              '& .c-teal rect': { fill: 'rgba(93, 202, 165, 0.16)', stroke: '#5DCAA5' },
+              '& .c-teal text': { fill: svgText },
+              '& .c-coral rect': { fill: 'rgba(255, 111, 97, 0.16)', stroke: '#FF6F61' },
+              '& .c-coral text': { fill: svgText },
+              '& .c-blue rect': { fill: 'rgba(24, 95, 165, 0.14)', stroke: '#185FA5' },
+              '& .c-blue text': { fill: svgText },
+              '& .c-gray rect': { fill: 'rgba(136, 135, 128, 0.14)', stroke: '#888780' },
+              '& .c-gray text': { fill: svgText },
+              '& .c-amber rect': { fill: 'rgba(245, 158, 11, 0.16)', stroke: '#F59E0B' },
+              '& .c-amber text': { fill: svgText },
+              '& .c-green rect': { fill: 'rgba(59, 109, 17, 0.16)', stroke: '#3B6D11' },
+              '& .c-green text': { fill: svgText },
+            }}
+            dangerouslySetInnerHTML={{ __html: text }}
+          />
+        )
+      }
+
       const isAsciiDiagram = /^[-+|\s\w]*$/.test(text) && text.includes('|')
       if (isAsciiDiagram && !isInline) {
-        const lines = text.split('\n')
         return (
           <Box overflowX="auto" mb={4} bg={codeBg} p={4} borderRadius="md" fontFamily="mono" fontSize="sm">
             <pre style={{ margin: 0 }}>{text}</pre>
@@ -128,8 +187,6 @@ const BlogPost = () => {
           </Code>
         )
       }
-      const match = /language-(\w+)/.exec(className || '')
-      const lang = match ? match[1] : ''
       return (
         <Box mb={4} borderRadius="md" overflow="hidden" sx={{ '& pre': { margin: 0 } }}>
           <SyntaxHighlighter
@@ -150,7 +207,7 @@ const BlogPost = () => {
         </Box>
       )
     },
-    blockquote: ({ node, ...props }) => (
+    blockquote: ({ node: _node, ...props }) => (
       <Box
         pl={4}
         borderLeftWidth="4px"
@@ -161,20 +218,20 @@ const BlogPost = () => {
         {...props}
       />
     ),
-    table: ({ node, ...props }) => (
+    table: ({ node: _node, ...props }) => (
       <Box overflowX="auto" mb={4}>
         <Table variant="simple" size="sm" colorScheme={colorMode === 'dark' ? 'whiteAlpha' : 'gray'} {...props} />
       </Box>
     ),
-    thead: ({ node, ...props }) => <Thead bg={tableHeadBg} {...props} />,
-    tbody: ({ node, ...props }) => <Tbody {...props} />,
-    tr: ({ node, ...props }) => <Tr {...props} />,
-    th: ({ node, ...props }) => <Th color={textColor} {...props} />,
-    td: ({ node, ...props }) => <Td color={textColor} {...props} />,
-    hr: ({ node, ...props }) => <Divider my={6} borderColor={borderColor} {...props} />,
-    img: ({ node, ...props }) => (
+    thead: ({ node: _node, ...props }) => <Thead bg={tableHeadBg} {...props} />,
+    tbody: ({ node: _node, ...props }) => <Tbody {...props} />,
+    tr: ({ node: _node, ...props }) => <Tr {...props} />,
+    th: ({ node: _node, ...props }) => <Th color={textColor} {...props} />,
+    td: ({ node: _node, ...props }) => <Td color={textColor} {...props} />,
+    hr: ({ node: _node, ...props }) => <Divider my={6} borderColor={borderColor} {...props} />,
+    img: ({ node: _node, ...props }) => (
       <Box my={6} display="flex" justifyContent="center" alignItems="center">
-        <chakra.img maxW="100%" height="auto" borderRadius="md" alt="" display="block" {...props} />
+        <Image maxW="100%" height="auto" borderRadius="md" alt="" display="block" {...props} />
       </Box>
     ),
   }

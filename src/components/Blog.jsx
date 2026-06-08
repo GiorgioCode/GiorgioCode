@@ -51,14 +51,23 @@ const Blog = () => {
             let current = ''
             const paras = []
             let started = false
+            let inFence = false
             for (const line of lines) {
+              const trimmed = line.trim()
               if (!started) {
                 if (line.startsWith('# ')) started = true
                 continue
               }
-              if (line.trim().startsWith('#')) continue
-              if (line.trim() === '---') continue
-              if (line.trim() === '') {
+              if (trimmed.startsWith('```')) {
+                inFence = !inFence
+                continue
+              }
+              if (inFence) continue
+              if (trimmed.startsWith('#')) continue
+              if (trimmed.startsWith('>')) continue
+              if (trimmed.startsWith('![')) continue
+              if (trimmed === '---') continue
+              if (trimmed === '') {
                 if (current.trim() !== '') {
                   paras.push(current.trim())
                   paraCount++
