@@ -145,8 +145,8 @@ Areas in which I actively research, experiment, and build systems:
 I regularly write about software development, system architecture, and emerging technologies.
 
 LinkedIn
-https://www.linkedin.com/in/jorge-angel-paez
-
+[https://www.linkedin.com/in/jorge-angel-paez
+](https://jorgepaez.vercel.app/blog)
 ---
 
 # Contact
